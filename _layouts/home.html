@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ site.title }}</h1>
+<ul class="story-list">
+    {% for story in site.stories %}
+    <li>
+        <span class="story-date">{{ story.date | date: "%d.%m.%Y" }}</span>
+        <a href="{{ story.url | relative_url }}">{{ story.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% if paginator.total_pages > 1 %}
+    {% include pagination.html %}
+{% endif %}

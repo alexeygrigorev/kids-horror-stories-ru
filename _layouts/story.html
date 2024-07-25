@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="story">
+    <h1>{{ page.title }}</h1>
+    <p class="story-date">Добавлено: {{ page.date | date: "%d.%m.%Y" }}</p>
+    {% if page.illustration %}
+    <img src="{{ page.illustration | relative_url }}" alt="{{ page.title }}">
+    {% endif %}
+    {{ content }}
+</article>
+{% include story_navigation.html %}

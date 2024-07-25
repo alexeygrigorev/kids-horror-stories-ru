@@ -1,0 +1,26 @@
+title: Детские Страшилки
+description: Коллекция детских рассказов-страшилок на русском языке
+baseurl: ""
+url: ""
+permalink: /:title/
+
+collections:
+  stories:
+    output: true
+    permalink: /stories/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: "story"
+
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/page:num/"
+
+sass:
+  style: compressed

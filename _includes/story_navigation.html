@@ -1,0 +1,8 @@
+<div class="story-navigation">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}">&laquo; Предыдущий рассказ</a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}">Следующий рассказ &raquo;</a>
+    {% endif %}
+</div>

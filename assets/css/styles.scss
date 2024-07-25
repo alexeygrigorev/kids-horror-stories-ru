@@ -1,0 +1,59 @@
+---
+---
+
+// This front matter is necessary for Jekyll to process this file
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+header, main, footer {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls button {
+    margin-left: 0.5rem;
+}
+
+.story-list article {
+    margin-bottom: 2rem;
+}
+
+.story img, .story-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination, .story-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
