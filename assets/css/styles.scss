@@ -1,24 +1,45 @@
 ---
 ---
 
-// This front matter is necessary for Jekyll to process this file
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+}
+
+body.transitions-enabled {
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .light-mode {
     background-color: #ffffff;
     color: #333333;
+
+    a {
+        color: #0000EE;
+        &:visited {
+            color: #551A8B;
+        }
+        &:hover, &:focus {
+            color: #0000AA;
+        }
+    }
 }
 
 .dark-mode {
     background-color: #333333;
     color: #ffffff;
+
+    a {
+        color: #9999FF;
+        &:visited {
+            color: #CC99FF;
+        }
+        &:hover, &:focus {
+            color: #CCCCFF;
+        }
+    }
 }
 
 header, main, footer {
@@ -35,25 +56,28 @@ header {
 
 .controls button {
     margin-left: 0.5rem;
+    font-size: 1em;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-.story-list article {
-    margin-bottom: 2rem;
+.story-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.story img, .story-list img {
-    max-width: 100%;
-    height: auto;
+.story-list li {
+    margin-bottom: 1rem;
 }
 
-.pagination, .story-navigation {
+.story-date {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+
+.pagination {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
 }
