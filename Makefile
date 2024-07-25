@@ -35,9 +35,4 @@ update: ensure_bundler
 
 # Create a new post
 new_post:
-	@read -p "Enter the title of the new post: " title; \
-	date=$$(date +%Y-%m-%d); \
-	slug=$$(echo "$$title" | iconv -t ascii//TRANSLIT | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+|-+$$//g' | tr A-Z a-z); \
-	number=$$(printf "%03d" $$(ls -1 _stories | wc -l | xargs -I{} expr {} + 1)); \
-	echo "---\nlayout: story\ntitle: \"$$title\"\ndate: $$date\nillustration: /assets/images/$$number-$$slug.jpg\nid: \"$$number\"\n---\n\nWrite your story here." > "_stories/$$number-$$slug.md"; \
-	echo "New post created: _stories/$$number-$$slug.md"
+	@bash new_post.sh
