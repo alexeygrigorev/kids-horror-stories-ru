@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятая бейсболка"
+title: "Бейсболка"
 date: 2024-07-25
 illustration: /assets/images/021-baseball-cap.jpg
 id: "021"

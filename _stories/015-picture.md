@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятие снимка"
+title: "Отличный кадр"
 date: 2024-07-25
 illustration: /assets/images/015-picture.jpg
 id: "015"

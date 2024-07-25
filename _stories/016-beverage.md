@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятый напиток"
+title: "Напиток"
 date: 2024-07-25
 illustration: /assets/images/016-beverage.jpg
 id: "016"

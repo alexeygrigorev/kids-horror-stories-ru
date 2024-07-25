@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятое уведомление"
+title: "Уведомление"
 date: 2024-07-25
 illustration: /assets/images/014-notification.jpg
 id: "014"

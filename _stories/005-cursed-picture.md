@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятая картина"
+title: "Лицо Теней"
 date: 2024-07-25
 illustration: /assets/images/005-cursed-picture.jpg
 id: "005"

@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Проклятие шелкопряда"
+title: "Шелкопряды"
 date: 2024-07-25
 illustration: /assets/images/002-silkworm-curse.jpg
 id: "002"
