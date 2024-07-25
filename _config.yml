@@ -1,7 +1,7 @@
 title: Детские Страшилки
 description: Коллекция детских рассказов-страшилок на русском языке
-baseurl: ""
-url: ""
+baseurl: "/kids-horror-stories-ru"
+url: "https://alexeygrigorev.github.io"
 permalink: /:title/
 
 collections:
