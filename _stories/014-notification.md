@@ -2,7 +2,7 @@
 layout: story
 title: "Уведомление"
 date: 2024-07-25
-illustration: /assets/images/014-notification.jpg
+illustration: /images/014-notification.webp
 id: "014"
 ---
 

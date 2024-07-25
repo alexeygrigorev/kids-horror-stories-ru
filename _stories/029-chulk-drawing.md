@@ -2,7 +2,7 @@
 layout: story
 title: "Меловой рисунок"
 date: 2024-07-25
-illustration: /assets/images/029-chulk-drawing.jpg
+# illustration: /assets/images/029-chulk-drawing.jpg
 id: "029"
 ---
 

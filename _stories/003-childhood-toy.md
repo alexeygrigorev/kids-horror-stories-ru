@@ -2,7 +2,7 @@
 layout: story
 title: "Игрушка из детства"
 date: 2024-07-25
-illustration: /assets/images/003-childhood-toy.jpg
+illustration: /images/003-childhood-toy.webp
 id: "003"
 ---
 

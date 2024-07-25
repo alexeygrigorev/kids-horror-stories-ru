@@ -2,7 +2,7 @@
 layout: story
 title: "Старый художник"
 date: 2024-07-25
-illustration: /assets/images/020-olds-painter-curse.jpg
+illustration: /images/020-olds-painter-curse.webp
 id: "020"
 ---
 

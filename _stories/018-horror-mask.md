@@ -2,7 +2,7 @@
 layout: story
 title: "Маска ужаса"
 date: 2024-07-25
-illustration: /assets/images/018-horror-mask.jpg
+illustration: /images/018-horror-mask.webp
 id: "018"
 ---
 

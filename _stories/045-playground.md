@@ -2,7 +2,7 @@
 layout: story
 title: "Детская площадка"
 date: 2024-07-25
-illustration: /assets/images/045-playground.jpg
+# illustration: /assets/images/045-playground.jpg
 id: "045"
 ---
 

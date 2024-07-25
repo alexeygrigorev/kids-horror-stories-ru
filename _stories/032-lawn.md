@@ -2,7 +2,7 @@
 layout: story
 title: "Лужайка"
 date: 2024-07-25
-illustration: /assets/images/032-lawn.jpg
+# illustration: /assets/images/032-lawn.jpg
 id: "032"
 ---
 

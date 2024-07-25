@@ -2,7 +2,7 @@
 layout: story
 title: "Лесной мальчик"
 date: 2024-07-25
-illustration: /assets/images/042-forest-boy.jpg
+# illustration: /assets/images/042-forest-boy.jpg
 id: "042"
 ---
 

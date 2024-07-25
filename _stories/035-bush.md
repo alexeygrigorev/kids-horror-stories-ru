@@ -2,7 +2,7 @@
 layout: story
 title: "Куст"
 date: 2024-07-25
-illustration: /assets/images/035-bush.jpg
+# illustration: /assets/images/035-bush.jpg
 id: "035"
 ---
 

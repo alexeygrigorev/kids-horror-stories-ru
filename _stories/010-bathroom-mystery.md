@@ -2,7 +2,7 @@
 layout: story
 title: "Тайна ванной комнаты"
 date: 2024-07-25
-illustration: /assets/images/010-bathroom-mystery.jpg
+illustration: /images/010-bathroom-mystery.webp
 id: "010"
 ---
 

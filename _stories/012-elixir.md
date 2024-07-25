@@ -2,7 +2,7 @@
 layout: story
 title: "Зловещий эликсир"
 date: 2024-07-25
-illustration: /assets/images/012-elixir.jpg
+illustration: /images/012-elixir.webp
 id: "012"
 ---
 

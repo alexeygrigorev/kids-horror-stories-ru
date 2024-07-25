@@ -2,7 +2,7 @@
 layout: story
 title: "Возвращение с того света"
 date: 2024-07-25
-illustration: /assets/images/011-come-back.jpg
+illustration: /images/011-come-back.webp
 id: "011"
 ---
 

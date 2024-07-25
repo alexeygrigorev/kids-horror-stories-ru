@@ -2,7 +2,7 @@
 layout: story
 title: "Проклятые черепа"
 date: 2024-07-25
-illustration: /assets/images/019-cursed-skulls.jpg
+illustration: /images/019-cursed-skulls.webp
 id: "019"
 ---
 

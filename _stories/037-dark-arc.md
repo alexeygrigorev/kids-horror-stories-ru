@@ -2,7 +2,7 @@
 layout: story
 title: "Арка в темноту"
 date: 2024-07-25
-illustration: /assets/images/037-dark-arc.jpg
+# illustration: /assets/images/037-dark-arc.jpg
 id: "037"
 ---
 

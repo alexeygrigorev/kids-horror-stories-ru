@@ -2,7 +2,7 @@
 layout: story
 title: "Проклятие старой куклы"
 date: 2024-07-25
-illustration: /assets/images/008-old-doll-curse.jpg
+illustration: /images/008-old-doll-curse.webp
 id: "008"
 ---
 

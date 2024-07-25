@@ -1,8 +1,8 @@
 ---
 layout: story
-title: "Череп Кошмара"
+title: "Череп кошмара"
 date: 2024-07-25
-illustration: /assets/images/006-nightmare-skull.jpg
+illustration: /images/006-nightmare-skull.webp
 id: "006"
 ---
 

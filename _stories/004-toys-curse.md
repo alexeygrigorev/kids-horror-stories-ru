@@ -2,7 +2,7 @@
 layout: story
 title: "Проклятие игрушек"
 date: 2024-07-25
-illustration: /assets/images/004-toys-curse.jpg
+illustration: /images/004-toys-curse.webp
 id: "004"
 ---
 

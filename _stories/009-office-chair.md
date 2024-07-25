@@ -2,7 +2,7 @@
 layout: story
 title: "Кресло из офиса"
 date: 2024-07-25
-illustration: /assets/images/009-office-chair.jpg
+illustration: /images/009-office-chair.webp
 id: "009"
 ---
 

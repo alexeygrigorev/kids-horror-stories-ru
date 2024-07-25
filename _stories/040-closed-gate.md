@@ -2,7 +2,7 @@
 layout: story
 title: "Закрытые ворота"
 date: 2024-07-25
-illustration: /assets/images/040-closed-gate.jpg
+# illustration: /assets/images/040-closed-gate.jpg
 id: "040"
 ---
 

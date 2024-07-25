@@ -2,7 +2,7 @@
 layout: story
 title: "Напиток"
 date: 2024-07-25
-illustration: /assets/images/016-beverage.jpg
+illustration: /images/016-beverage.webp
 id: "016"
 ---
 

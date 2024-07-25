@@ -2,7 +2,7 @@
 layout: story
 title: "Проклятие каштана"
 date: 2024-07-25
-illustration: /assets/images/027-chestnut.jpg
+# illustration: /assets/images/027-chestnut.jpg
 id: "027"
 ---
 

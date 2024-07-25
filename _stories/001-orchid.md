@@ -2,7 +2,7 @@
 layout: story
 title: "Орхидея на окне"
 date: 2024-07-24
-# illustration: /images/001-orchid.jpg
+illustration: /images/001-orchid.webp
 id: "001"
 ---
 

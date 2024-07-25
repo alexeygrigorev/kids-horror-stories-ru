@@ -2,7 +2,7 @@
 layout: story
 title: "Призрачный череп"
 date: 2024-07-25
-illustration: /assets/images/007-ghost-skull.jpg
+illustration: /images/007-ghost-skull.webp
 id: "007"
 ---
 

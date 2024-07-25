@@ -2,7 +2,7 @@
 layout: story
 title: "Лопата в песочнице"
 date: 2024-07-25
-illustration: /assets/images/033-shovel.jpg
+# illustration: /assets/images/033-shovel.jpg
 id: "033"
 ---
 

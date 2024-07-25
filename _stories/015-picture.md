@@ -2,7 +2,7 @@
 layout: story
 title: "Отличный кадр"
 date: 2024-07-25
-illustration: /assets/images/015-picture.jpg
+illustration: /images/015-picture.webp
 id: "015"
 ---
 

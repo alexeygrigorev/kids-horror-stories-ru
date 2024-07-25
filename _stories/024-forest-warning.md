@@ -2,7 +2,7 @@
 layout: story
 title: "Лесное предупреждение"
 date: 2024-07-25
-illustration: /assets/images/024-forest-warning.jpg
+# illustration: /assets/images/024-forest-warning.jpg
 id: "024"
 ---
 

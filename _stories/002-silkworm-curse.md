@@ -2,7 +2,7 @@
 layout: story
 title: "Шелкопряды"
 date: 2024-07-25
-illustration: /assets/images/002-silkworm-curse.jpg
+illustration: /images/002-silkworm-curse.webp
 id: "002"
 ---
 

@@ -2,7 +2,7 @@
 layout: story
 title: "Экскаватор"
 date: 2024-07-25
-illustration: /assets/images/036-excavator.jpg
+# illustration: /assets/images/036-excavator.jpg
 id: "036"
 ---
 

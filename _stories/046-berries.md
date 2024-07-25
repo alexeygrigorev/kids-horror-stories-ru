@@ -1,8 +1,8 @@
 ---
 layout: story
-title: "Ягоды"
+title: "Запретные ягоды"
 date: 2024-07-25
-illustration: /assets/images/046-berries.jpg
+# illustration: /assets/images/046-berries.jpg
 id: "046"
 ---
 

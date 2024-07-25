@@ -2,7 +2,7 @@
 layout: story
 title: "Заброшенный участок"
 date: 2024-07-25
-illustration: /assets/images/043-abandoned-garden.jpg
+# illustration: /assets/images/043-abandoned-garden.jpg
 id: "043"
 ---
 

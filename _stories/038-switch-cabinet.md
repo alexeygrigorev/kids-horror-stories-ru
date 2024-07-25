@@ -2,7 +2,7 @@
 layout: story
 title: "Распеределительный шкаф"
 date: 2024-07-25
-illustration: /assets/images/038-switch-cabinet.jpg
+# illustration: /assets/images/038-switch-cabinet.jpg
 id: "038"
 ---
 

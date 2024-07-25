@@ -2,7 +2,7 @@
 layout: story
 title: "Кровавый ритуал"
 date: 2024-07-25
-illustration: /assets/images/022-bloody-ritual.jpg
+# illustration: /assets/images/022-bloody-ritual.jpg
 id: "022"
 ---
 

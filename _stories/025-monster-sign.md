@@ -2,7 +2,7 @@
 layout: story
 title: "Знак монстра"
 date: 2024-07-25
-illustration: /assets/images/025-monster-sign.jpg
+# illustration: /assets/images/025-monster-sign.jpg
 id: "025"
 ---
 

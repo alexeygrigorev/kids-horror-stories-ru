@@ -2,7 +2,7 @@
 layout: story
 title: "Старый парк"
 date: 2024-07-25
-illustration: /assets/images/031-old-park.jpg
+# illustration: /assets/images/031-old-park.jpg
 id: "031"
 ---
 

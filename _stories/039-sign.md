@@ -2,7 +2,7 @@
 layout: story
 title: "Табличка во дворе"
 date: 2024-07-25
-illustration: /assets/images/039-sign.jpg
+# illustration: /assets/images/039-sign.jpg
 id: "039"
 ---
 

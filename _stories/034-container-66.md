@@ -2,7 +2,7 @@
 layout: story
 title: "Контейнер 66"
 date: 2024-07-25
-illustration: /assets/images/034-container-66.jpg
+# illustration: /assets/images/034-container-66.jpg
 id: "034"
 ---
 

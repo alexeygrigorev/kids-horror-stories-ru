@@ -13,7 +13,7 @@ cat << EOF > "$file"
 layout: story
 title: "$title_ru"
 date: $date
-illustration: /assets/images/$number-$slug.jpg
+# illustration: /images/$number-$slug.webp
 id: "$number"
 ---
 

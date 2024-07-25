@@ -2,7 +2,7 @@
 layout: story
 title: "Лицо Теней"
 date: 2024-07-25
-illustration: /assets/images/005-cursed-picture.jpg
+illustration: /images/005-cursed-picture.webp
 id: "005"
 ---
 

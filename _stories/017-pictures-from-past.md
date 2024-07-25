@@ -2,7 +2,7 @@
 layout: story
 title: "Рисунки из прошлого"
 date: 2024-07-25
-illustration: /assets/images/017-pictures-from-past.jpg
+illustration: /images/017-pictures-from-past.webp
 id: "017"
 ---
 

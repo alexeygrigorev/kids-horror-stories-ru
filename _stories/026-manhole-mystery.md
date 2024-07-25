@@ -2,7 +2,7 @@
 layout: story
 title: "Тайна канализационного люка"
 date: 2024-07-25
-illustration: /assets/images/026-manhole-mystery.jpg
+# illustration: /assets/images/026-manhole-mystery.jpg
 id: "026"
 ---
 
