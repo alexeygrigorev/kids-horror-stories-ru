@@ -111,10 +111,9 @@ def create_illustration_prompt(story):
     Стиль иллюстрации:
 
     a flat, linear style with bold outlines and minimalistic, vibrant colors.
-    The scene should include whimsical and slightly eerie elements, such as mountains with skeletal figures,
-    simple trees, and small groups of people exploring or interacting with the environment.
-    The overall aesthetic should combine a playful cartoonish feel with a touch of spookiness, similar
-    to a light-hearted horror theme.
+    The scene should include whimsical and slightly eerie elements.
+    The overall aesthetic should combine a playful cartoonish feel
+    with a touch of spookiness, similar to a light-hearted horror theme.
 
     Avoid adding text on the illustration.
 
