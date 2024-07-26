@@ -17,7 +17,7 @@ layout: null
       <itunes:name>{{ site.podcast.author }}</itunes:name>
       <itunes:email>{{ site.podcast.email }}</itunes:email>
     </itunes:owner>
-    <itunes:image href="{{ site.podcast.url }}/images/logo.png"/>
+    <itunes:image href="{{ '/images/logo.png' | absolute_url }}"/>
     <itunes:category text="Kids &amp; Family">
       <itunes:category text="Stories"/>
     </itunes:category>
@@ -28,7 +28,11 @@ layout: null
         <itunes:author>{{ site.podcast.author }}</itunes:author>
         <itunes:subtitle>{{ post.title }}</itunes:subtitle>
         <itunes:summary>{{ post.content | strip_html | truncatewords: 50 }}</itunes:summary>
-        <itunes:image href="{{ site.podcast.url }}/images/logo.png"/>
+        {% if post.illustration %}
+        <itunes:image href="{{ post.illustration | absolute_url }}"/>
+        {% else %}
+        <itunes:image href="{{ '/images/logo.png' | absolute_url }}"/>
+        {% endif %}
         <enclosure url="{{ post.audio_url }}" length="{{ post.audio_size }}" type="audio/mpeg"/>
         <guid>{{ post.audio_url }}</guid>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
