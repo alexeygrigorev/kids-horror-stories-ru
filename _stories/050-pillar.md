@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Столб"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/050-pillar.mp3
 date: 2024-07-25
-# illustration: /assets/images/050-pillar.jpg
-id: "050"
+id: '050'
+layout: story
+title: Столб
 ---
 
 На окраине небольшого городка, у перекрестка, стоял высокий металлический столб линии электропередач. Этот столб был не просто частью городской инфраструктуры, он был свидетелем множества событий и хранил мрачную тайну.

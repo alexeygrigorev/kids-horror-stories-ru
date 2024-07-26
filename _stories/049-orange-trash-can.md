@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Оранжевая урна"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/049-orange-trash-can.mp3
 date: 2024-07-25
+id: 049
 illustration: /images/049-orange-trash-can.webp
-id: "049"
+layout: story
+title: Оранжевая урна
 ---
 
 На одном из оживленных перекрестков небольшого городка стояла неприметная оранжевая урна. Люди проходили мимо, бросали в нее мусор, не придавая ей значения. Но мало кто знал, что эта урна хранила в себе мрачную тайну.
