@@ -8,3 +8,7 @@ vendor/
 
 .envrc
 temp_audio/
+images_input/*.jpg
+images_input/*.jpeg
+images_input/*.webp
+images_input/*.png

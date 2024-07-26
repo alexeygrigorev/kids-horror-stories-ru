@@ -9,6 +9,7 @@ openai = "*"
 python-frontmatter = "*"
 tqdm = "*"
 mutagen = "*"
+requests = "*"
 
 [dev-packages]
 
