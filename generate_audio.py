@@ -8,6 +8,8 @@ import frontmatter
 from openai import OpenAI
 from botocore.exceptions import NoCredentialsError
 
+import mutagen
+
 
 client = OpenAI()
 
@@ -68,6 +70,13 @@ def upload_to_s3(local_file, s3_file):
         return None
 
 
+def get_audio_info(file_path):
+    audio = mutagen.File(file_path)
+    size = os.path.getsize(file_path)
+    duration = int(audio.info.length)
+    return size, f"{duration // 60:02d}:{duration % 60:02d}"
+
+
 def process_story(file_path):
     try:
         print("Processing story:", file_path)
@@ -84,6 +93,11 @@ def process_story(file_path):
             if s3_url:
                 if post.get("audio_url") != s3_url:
                     post["audio_url"] = s3_url
+
+                    audio_size, duration = get_audio_info(audio_file_path)
+                    post["audio_size"] = audio_size
+                    post["duration"] = duration
+
                     frontmatter.dump(post, file_path)
                     print(f"Updated {file_path} with audio URL: {s3_url}")
                     print("Frontmatter now includes 'audio_url' field.")
