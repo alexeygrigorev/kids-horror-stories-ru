@@ -1,9 +1,11 @@
 ---
+audio_size: 2814720
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/007-ghost-skull.mp3
 date: 2024-07-25
-id: '007'
+duration: 02:20
 illustration: /images/007-ghost-skull.webp
 layout: story
+story_number: '007'
 title: Призрачный череп
 ---
 

@@ -1,10 +1,12 @@
 ---
+audio_size: 3154080
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/077-staircase-to-unknown.mp3
 date: 2024-07-26
-id: '077'
-layout: story
-title: Лестница в неведомое
+duration: 02:37
 illustrations: /images/077-staircase-to-unknown.webp
+layout: story
+story_number: '077'
+title: Лестница в неведомое
 ---
 
 В старом жилом доме на окраине города была одна лестница, о которой ходили мрачные слухи. Жители этого дома утверждали, что лестница ведёт не просто на этажи, но и в другое измерение.

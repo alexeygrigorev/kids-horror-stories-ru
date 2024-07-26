@@ -14,7 +14,7 @@ layout: story
 title: "$title_ru"
 date: $date
 # illustration: /images/$number-$slug.webp
-id: "$number"
+story_number: "$number"
 ---
 
 Write your story here.

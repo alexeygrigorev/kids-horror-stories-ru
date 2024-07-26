@@ -1,9 +1,11 @@
 ---
+audio_size: 3168960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/015-picture.mp3
 date: 2024-07-25
-id: '015'
+duration: 02:38
 illustration: /images/015-picture.webp
 layout: story
+story_number: '015'
 title: Отличный кадр
 ---
 

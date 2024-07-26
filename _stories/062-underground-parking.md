@@ -1,8 +1,10 @@
 ---
+audio_size: 2548320
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/062-underground-parking.mp3
 date: 2024-07-26
-id: '062'
+duration: 02:07
 layout: story
+story_number: '062'
 title: Тайна подземной парковки
 ---
 

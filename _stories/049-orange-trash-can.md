@@ -1,9 +1,11 @@
 ---
+audio_size: 2832000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/049-orange-trash-can.mp3
 date: 2024-07-25
-id: 049
+duration: 02:21
 illustration: /images/049-orange-trash-can.webp
 layout: story
+story_number: 049
 title: Оранжевая урна
 ---
 

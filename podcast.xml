@@ -1,0 +1,40 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.podcast.title }}</title>
+    <link>{{ site.podcast.url }}</link>
+    <language>ru-ru</language>
+    <copyright>&#xA9; {{ site.time | date: "%Y" }} {{ site.podcast.title }}</copyright>
+    <itunes:subtitle>{{ site.podcast.description | truncate: 255 }}</itunes:subtitle>
+    <itunes:author>{{ site.podcast.author }}</itunes:author>
+    <itunes:summary>{{ site.podcast.description }}</itunes:summary>
+    <description>{{ site.podcast.description }}</description>
+    <webMaster>{{ site.podcast.email }} ({{ site.podcast.author }})</webMaster>
+    <itunes:owner>
+      <itunes:name>{{ site.podcast.author }}</itunes:name>
+      <itunes:email>{{ site.podcast.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:image href="{{ site.podcast.url }}/images/logo.png"/>
+    <itunes:category text="Kids &amp; Family">
+      <itunes:category text="Stories"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    {% for post in site.stories reversed %}
+      <item>
+        <title>История №{{ post.story_number }} - {{ post.title }}</title>
+        <itunes:author>{{ site.podcast.author }}</itunes:author>
+        <itunes:subtitle>{{ post.title }}</itunes:subtitle>
+        <itunes:summary>{{ post.content | strip_html | truncatewords: 50 }}</itunes:summary>
+        <itunes:image href="{{ site.podcast.url }}/images/logo.png"/>
+        <enclosure url="{{ post.audio_url }}" length="{{ post.audio_size }}" type="audio/mpeg"/>
+        <guid>{{ post.audio_url }}</guid>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <itunes:duration>{{ post.duration }}</itunes:duration>
+        <itunes:explicit>no</itunes:explicit>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

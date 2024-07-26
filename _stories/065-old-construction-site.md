@@ -1,8 +1,10 @@
 ---
+audio_size: 2726880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/065-old-construction-site.mp3
 date: 2024-07-26
-id: '065'
+duration: 02:16
 layout: story
+story_number: '065'
 title: Старая стройка
 ---
 

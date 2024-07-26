@@ -1,9 +1,11 @@
 ---
+audio_size: 3004320
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/032-lawn.mp3
 date: 2024-07-25
-id: '032'
+duration: 02:30
 illustration: /images/032-lawn.webp
 layout: story
+story_number: '032'
 title: Лужайка
 ---
 

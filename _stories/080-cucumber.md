@@ -1,8 +1,10 @@
 ---
+audio_size: 3636960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/080-cucumber.mp3
 date: 2024-07-26
-id: 080
+duration: 03:01
 layout: story
+story_number: 080
 title: Огурец
 ---
 

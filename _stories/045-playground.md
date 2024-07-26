@@ -1,9 +1,11 @@
 ---
+audio_size: 2765760
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/045-playground.mp3
 date: 2024-07-25
-id: '045'
+duration: 02:18
 illustration: /images/045-playground.webp
 layout: story
+story_number: '045'
 title: Детская площадка
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 2930400
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/012-elixir.mp3
 date: 2024-07-25
-id: '012'
+duration: 02:26
 illustration: /images/012-elixir.webp
 layout: story
+story_number: '012'
 title: Зловещий эликсир
 ---
 

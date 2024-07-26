@@ -1,9 +1,11 @@
 ---
+audio_size: 2759040
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/024-forest-warning.mp3
 date: 2024-07-25
-id: '024'
+duration: 02:17
 illustration: /assets/images/024-forest-warning.webp
 layout: story
+story_number: '024'
 title: Лесное предупреждение
 ---
 

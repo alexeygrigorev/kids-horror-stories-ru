@@ -1,9 +1,11 @@
 ---
+audio_size: 2292000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/046-berries.mp3
 date: 2024-07-25
-id: '046'
+duration: 01:54
 illustration: /images/046-berries.webp
 layout: story
+story_number: '046'
 title: Запретные ягоды
 ---
 

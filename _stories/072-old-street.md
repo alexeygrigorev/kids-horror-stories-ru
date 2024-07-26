@@ -1,10 +1,12 @@
 ---
+audio_size: 3037920
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/072-old-street.mp3
 date: 2024-07-26
-id: '072'
-layout: story
-title: Старый переулок
+duration: 02:31
 illustration: /images/072-old-street.webp
+layout: story
+story_number: '072'
+title: Старый переулок
 ---
 
 В центре города, среди оживленных улиц и туристических троп, был один переулок, который всегда притягивал к себе взгляды, но никто не решался зайти туда. Старые здания с облупившейся краской, узкие окна и затворенные ставни создавали атмосферу заброшенности и тайны.

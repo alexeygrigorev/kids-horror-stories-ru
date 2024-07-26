@@ -1,9 +1,11 @@
 ---
+audio_size: 3456000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/019-cursed-skulls.mp3
 date: 2024-07-25
-id: 019
+duration: 02:52
 illustration: /images/019-cursed-skulls.webp
 layout: story
+story_number: 019
 title: Проклятые черепа
 ---
 

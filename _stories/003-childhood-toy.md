@@ -1,9 +1,11 @@
 ---
+audio_size: 2780640
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/003-childhood-toy.mp3
 date: 2024-07-25
-id: '003'
+duration: 02:19
 illustration: /images/003-childhood-toy.webp
 layout: story
+story_number: '003'
 title: Игрушка из детства
 ---
 

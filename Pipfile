@@ -8,6 +8,7 @@ boto3 = "*"
 openai = "*"
 python-frontmatter = "*"
 tqdm = "*"
+mutagen = "*"
 
 [dev-packages]
 

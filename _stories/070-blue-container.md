@@ -1,10 +1,12 @@
 ---
+audio_size: 2841120
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/070-blue-container.mp3
 date: 2024-07-26
-id: '070'
-layout: story
-title: Синий контейнер
+duration: 02:22
 illustration: /images/070-blue-container.webp
+layout: story
+story_number: '070'
+title: Синий контейнер
 ---
 
 На одной из тихих улочек города стоял старый синий контейнер для мусора. Он выглядел обычным, но местные жители обходили его стороной. Говорили, что этот контейнер появился здесь неожиданно, и с тех пор в районе начали происходить странные события.

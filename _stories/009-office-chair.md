@@ -1,9 +1,11 @@
 ---
+audio_size: 3246720
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/009-office-chair.mp3
 date: 2024-07-25
-id: 009
+duration: 02:42
 illustration: /images/009-office-chair.webp
 layout: story
+story_number: 009
 title: Кресло из офиса
 ---
 

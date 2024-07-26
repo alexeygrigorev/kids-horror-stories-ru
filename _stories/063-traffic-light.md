@@ -1,8 +1,10 @@
 ---
+audio_size: 2397120
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/063-traffic-light.mp3
 date: 2024-07-26
-id: '063'
+duration: 01:59
 layout: story
+story_number: '063'
 title: Одинокий светофор
 ---
 

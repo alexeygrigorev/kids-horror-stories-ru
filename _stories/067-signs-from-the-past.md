@@ -1,8 +1,10 @@
 ---
+audio_size: 2620800
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/067-signs-from-the-past.mp3
 date: 2024-07-26
-id: '067'
+duration: 02:11
 layout: story
+story_number: '067'
 title: Знаки из прошлого
 ---
 

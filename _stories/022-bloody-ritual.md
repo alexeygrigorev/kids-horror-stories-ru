@@ -1,9 +1,11 @@
 ---
+audio_size: 2894880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/022-bloody-ritual.mp3
 date: 2024-07-25
-id: '022'
+duration: 02:24
 illustration: /images/022-bloody-ritual.webp
 layout: story
+story_number: '022'
 title: Кровавый ритуал
 ---
 

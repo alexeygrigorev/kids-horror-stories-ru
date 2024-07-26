@@ -1,9 +1,11 @@
 ---
+audio_size: 2832960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/031-old-park.mp3
 date: 2024-07-25
-id: '031'
+duration: 02:21
 illustration: /images/031-old-park.webp
 layout: story
+story_number: '031'
 title: Старый парк
 ---
 

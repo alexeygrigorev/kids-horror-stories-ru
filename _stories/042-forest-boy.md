@@ -1,9 +1,11 @@
 ---
+audio_size: 2878080
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/042-forest-boy.mp3
 date: 2024-07-25
-id: '042'
+duration: 02:23
 illustration: /images/042-forest-boy.webp
 layout: story
+story_number: '042'
 title: Лесной мальчик
 ---
 

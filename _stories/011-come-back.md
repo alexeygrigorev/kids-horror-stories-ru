@@ -1,9 +1,11 @@
 ---
+audio_size: 2901600
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/011-come-back.mp3
 date: 2024-07-25
-id: '011'
+duration: 02:25
 illustration: /images/011-come-back.webp
 layout: story
+story_number: '011'
 title: Возвращение с того света
 ---
 

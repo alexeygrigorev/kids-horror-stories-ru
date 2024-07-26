@@ -1,9 +1,11 @@
 ---
+audio_size: 2916000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/008-old-doll-curse.mp3
 date: 2024-07-25
-id: 008
+duration: 02:25
 illustration: /images/008-old-doll-curse.webp
 layout: story
+story_number: 008
 title: Проклятие старой куклы
 ---
 

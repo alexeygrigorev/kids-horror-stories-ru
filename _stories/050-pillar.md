@@ -1,8 +1,10 @@
 ---
+audio_size: 3155040
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/050-pillar.mp3
 date: 2024-07-25
-id: '050'
+duration: 02:37
 layout: story
+story_number: '050'
 title: Столб
 ---
 

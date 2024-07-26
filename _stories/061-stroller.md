@@ -1,8 +1,10 @@
 ---
+audio_size: 2532000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/061-stroller.mp3
 date: 2024-07-26
-id: '061'
+duration: 02:06
 layout: story
+story_number: '061'
 title: Проклятая коляска
 ---
 

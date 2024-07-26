@@ -1,9 +1,11 @@
 ---
+audio_size: 2683680
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/020-olds-painter-curse.mp3
 date: 2024-07-25
-id: '020'
+duration: 02:14
 illustration: /images/020-olds-painter-curse.webp
 layout: story
+story_number: '020'
 title: Старый художник
 ---
 

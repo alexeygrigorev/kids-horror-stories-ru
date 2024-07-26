@@ -1,9 +1,11 @@
 ---
+audio_size: 3015840
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/043-abandoned-garden.mp3
 date: 2024-07-25
-id: '043'
+duration: 02:30
 illustration: /images/043-abandoned-garden.webp
 layout: story
+story_number: '043'
 title: Заброшенный участок
 ---
 

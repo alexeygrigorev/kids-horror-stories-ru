@@ -1,8 +1,10 @@
 ---
+audio_size: 3068160
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/059-shadow-on-wheel.mp3
 date: 2024-07-25
-id: 059
+duration: 02:33
 layout: story
+story_number: 059
 title: Тень на колесе
 ---
 

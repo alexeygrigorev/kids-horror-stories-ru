@@ -1,10 +1,12 @@
 ---
+audio_size: 3311040
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/079-scissors.mp3
 date: 2024-07-26
-id: 079
-layout: story
-title: Ножницы
+duration: 02:45
 illustration: /images/079-scissors.jpg
+layout: story
+story_number: 079
+title: Ножницы
 ---
 
 Эти ножницы, блестящие и на первый взгляд обычные, оказались предметом с мрачной историей. Много лет назад они принадлежали портному по имени Михаил, который был известен в своем городе не только мастерством, но и тем, что умел "перерезать" судьбы людей.

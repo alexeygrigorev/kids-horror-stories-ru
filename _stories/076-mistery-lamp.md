@@ -1,10 +1,12 @@
 ---
+audio_size: 4703520
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/076-mistery-lamp.mp3
 date: 2024-07-26
-id: '076'
-layout: story
-title: Светильник тайн
+duration: 03:55
 illustration: /images/076-mistery-lamp.webp
+layout: story
+story_number: '076'
+title: Светильник тайн
 ---
 
 На стене старого здания в центре города висел старый светильник. Казалось бы, ничем не примечательный объект, который должен был освещать вход в подъезд, но местные жители знали, что с ним связано что-то странное.

@@ -1,8 +1,10 @@
 ---
+audio_size: 2211840
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/064-call-from-the-sky.mp3
 date: 2024-07-26
-id: '064'
+duration: 01:50
 layout: story
+story_number: '064'
 title: Зов с небес
 ---
 

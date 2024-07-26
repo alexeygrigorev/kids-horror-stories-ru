@@ -1,9 +1,11 @@
 ---
+audio_size: 3129600
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/040-closed-gate.mp3
 date: 2024-07-25
-id: '040'
+duration: 02:36
 illustration: /images/040-closed-gate.webp
 layout: story
+story_number: '040'
 title: Закрытые ворота
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 2425920
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/002-silkworm-curse.mp3
 date: 2024-07-25
-id: '002'
+duration: 02:01
 illustration: /images/002-silkworm-curse.webp
 layout: story
+story_number: '002'
 title: Шелкопряды
 ---
 

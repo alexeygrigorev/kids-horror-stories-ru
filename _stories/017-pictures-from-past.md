@@ -1,9 +1,11 @@
 ---
+audio_size: 3165120
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/017-pictures-from-past.mp3
 date: 2024-07-25
-id: '017'
+duration: 02:38
 illustration: /images/017-pictures-from-past.webp
 layout: story
+story_number: '017'
 title: Рисунки из прошлого
 ---
 

@@ -1,8 +1,10 @@
 ---
+audio_size: 3011040
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/051-dog-with-basket.mp3
 date: 2024-07-25
-id: '051'
+duration: 02:30
 layout: story
+story_number: '051'
 title: Собака с корзиной в зубах
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 2682240
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/034-container-66.mp3
 date: 2024-07-25
-id: '034'
+duration: 02:14
 illustration: /images/034-container-66.webp
 layout: story
+story_number: '034'
 title: Контейнер 66
 ---
 

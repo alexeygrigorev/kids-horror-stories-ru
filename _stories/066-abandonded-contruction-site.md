@@ -1,8 +1,10 @@
 ---
+audio_size: 2853600
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/066-abandonded-contruction-site.mp3
 date: 2024-07-26
-id: '066'
+duration: 02:22
 layout: story
+story_number: '066'
 title: Тайна заброшенной стройки
 ---
 

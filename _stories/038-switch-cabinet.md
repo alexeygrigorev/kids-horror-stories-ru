@@ -1,9 +1,11 @@
 ---
+audio_size: 2641440
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/038-switch-cabinet.mp3
 date: 2024-07-25
-id: 038
+duration: 02:12
 illustration: /images/038-switch-cabinet.webp
 layout: story
+story_number: 038
 title: Распеределительный шкаф
 ---
 

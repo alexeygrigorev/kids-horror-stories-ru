@@ -1,8 +1,10 @@
 ---
+audio_size: 2796960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/055-flowers-of-memories.mp3
 date: 2024-07-25
-id: '055'
+duration: 02:19
 layout: story
+story_number: '055'
 title: Цветы воспоминаний
 ---
 

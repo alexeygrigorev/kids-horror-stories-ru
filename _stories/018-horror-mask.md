@@ -1,9 +1,11 @@
 ---
+audio_size: 2792640
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/018-horror-mask.mp3
 date: 2024-07-25
-id: 018
+duration: 02:19
 illustration: /images/018-horror-mask.webp
 layout: story
+story_number: 018
 title: Маска ужаса
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 3287520
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/004-toys-curse.mp3
 date: 2024-07-25
-id: '004'
+duration: 02:44
 illustration: /images/004-toys-curse.webp
 layout: story
+story_number: '004'
 title: Проклятие игрушек
 ---
 

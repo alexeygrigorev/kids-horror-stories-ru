@@ -1,9 +1,11 @@
 ---
+audio_size: 3416160
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/016-beverage.mp3
 date: 2024-07-25
-id: '016'
+duration: 02:50
 illustration: /images/016-beverage.webp
 layout: story
+story_number: '016'
 title: Напиток
 ---
 

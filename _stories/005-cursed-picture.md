@@ -1,9 +1,11 @@
 ---
+audio_size: 3076320
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/005-cursed-picture.mp3
 date: 2024-07-25
-id: '005'
+duration: 02:33
 illustration: /images/005-cursed-picture.webp
 layout: story
+story_number: '005'
 title: Лицо Теней
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 3110880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/027-chestnut.mp3
 date: 2024-07-25
-id: '027'
+duration: 02:35
 illustration: /images/027-chestnut.webp
 layout: story
+story_number: '027'
 title: Проклятие каштана
 ---
 

@@ -1,9 +1,11 @@
 ---
+audio_size: 2526240
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/029-chulk-drawing.mp3
 date: 2024-07-25
-id: 029
+duration: 02:06
 illustration: /images/029-chulk-drawing.webp
 layout: story
+story_number: 029
 title: Меловой рисунок
 ---
 

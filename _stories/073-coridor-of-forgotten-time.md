@@ -1,10 +1,12 @@
 ---
+audio_size: 3716160
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/073-coridor-of-forgotten-time.mp3
 date: 2024-07-26
-id: '073'
-layout: story
-title: Коридор забытого времени
+duration: 03:05
 illustration: /images/073-coridor-of-forgotten-time.webp
+layout: story
+story_number: '073'
+title: Коридор забытого времени
 ---
 
 В старом жилом доме на окраине города был коридор, который местные жители называли "Коридор забытого времени". Внешне он ничем не отличался от обычного подъезда, но все знали, что здесь происходят странные и необъяснимые вещи.

@@ -1,9 +1,11 @@
 ---
+audio_size: 3012480
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/041-path-among-trees.mp3
 date: 2024-07-25
-id: '041'
+duration: 02:30
 illustration: /images/041-path-among-trees.webp
 layout: story
+story_number: '041'
 title: Тропинка среди деревьев
 ---
 

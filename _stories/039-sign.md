@@ -1,9 +1,11 @@
 ---
+audio_size: 2858400
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/039-sign.mp3
 date: 2024-07-25
-id: 039
+duration: 02:22
 illustration: /images/039-sign.webp
 layout: story
+story_number: 039
 title: Табличка во дворе
 ---
 

@@ -1,10 +1,12 @@
 ---
+audio_size: 2762880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/074-dog-in-sunglasses.mp3
 date: 2024-07-26
-id: '074'
-layout: story
-title: Пёс в очках
+duration: 02:18
 illustration: /images/074-dog-in-sunglasses.webp
+layout: story
+story_number: '074'
+title: Пёс в очках
 ---
 
 На оживленной площади города, где местные музыканты играли свои мелодии, и прохожие наслаждались летним вечером, появился необычный пёс. Этот чау-чау, в стильных круглых очках, привлекал внимание всех вокруг. Его спокойный вид и необычный аксессуар вызывали улыбки и восторженные взгляды.

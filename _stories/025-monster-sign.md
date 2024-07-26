@@ -1,9 +1,11 @@
 ---
+audio_size: 3107040
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/025-monster-sign.mp3
 date: 2024-07-25
-id: '025'
+duration: 02:35
 illustration: /images/025-monster-sign.webp
 layout: story
+story_number: '025'
 title: Знак монстра
 ---
 

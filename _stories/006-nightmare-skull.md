@@ -1,9 +1,11 @@
 ---
+audio_size: 2954400
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/006-nightmare-skull.mp3
 date: 2024-07-25
-id: '006'
+duration: 02:27
 illustration: /images/006-nightmare-skull.webp
 layout: story
+story_number: '006'
 title: Череп кошмара
 ---
 

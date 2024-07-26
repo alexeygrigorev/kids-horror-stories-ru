@@ -1,11 +1,12 @@
 ---
+audio_size: 2801760
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/068-abandoned-things.mp3
 date: 2024-07-26
-id: 068
-layout: story
-title: Заброшенные вещи
+duration: 02:20
 illustration: /images/068-abandoned-things.webp
-
+layout: story
+story_number: 068
+title: Заброшенные вещи
 ---
 
 В тихом квартале города, у стен старого дома, лежала куча заброшенных вещей. Разнообразные предметы — одежда, бумаги, мусор — казалось, были выброшены в спешке. Местные жители долгое время не обращали на них внимания, считая это просто мусором. Но вскоре начали происходить странные события.

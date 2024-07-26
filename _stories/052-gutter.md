@@ -1,8 +1,10 @@
 ---
+audio_size: 3012960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/052-gutter.mp3
 date: 2024-07-25
-id: '052'
+duration: 02:30
 layout: story
+story_number: '052'
 title: Водосток
 ---
 

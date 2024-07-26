@@ -1,9 +1,11 @@
 ---
+audio_size: 2627520
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/033-shovel.mp3
 date: 2024-07-25
-id: '033'
+duration: 02:11
 illustration: /images/033-shovel.webp
 layout: story
+story_number: '033'
 title: Лопата в песочнице
 ---
 

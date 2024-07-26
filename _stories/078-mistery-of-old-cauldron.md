@@ -1,10 +1,12 @@
 ---
+audio_size: 3150720
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/078-mistery-of-old-cauldron.mp3
 date: 2024-07-26
-id: 078
-layout: story
-title: Тайна старого котла
+duration: 02:37
 illustration: /images/078-mistery-of-old-cauldron.webp
+layout: story
+story_number: 078
+title: Тайна старого котла
 ---
 
 На кухне маленькой квартиры стоял старый котел, который, казалось, служил хозяйке верой и правдой многие годы. Металлический блеск был потускневшим, а дно покрыто нагаром от многочисленных готовок. Этот котел был передан от бабушки к матери, а затем к Елене, текущей хозяйке дома.

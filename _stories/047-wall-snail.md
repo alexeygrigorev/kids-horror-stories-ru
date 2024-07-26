@@ -1,9 +1,11 @@
 ---
+audio_size: 2820000
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/047-wall-snail.mp3
 date: 2024-07-25
-id: '047'
+duration: 02:21
 illustration: /images/047-wall-snail.webp
 layout: story
+story_number: '047'
 title: Улитка на стене
 ---
 

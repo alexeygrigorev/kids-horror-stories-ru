@@ -1,9 +1,11 @@
 ---
+audio_size: 2830560
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/037-dark-arc.mp3
 date: 2024-07-25
-id: '037'
+duration: 02:21
 illustration: /images/037-dark-arc.webp
 layout: story
+story_number: '037'
 title: Арка в темноту
 ---
 

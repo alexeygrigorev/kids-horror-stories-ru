@@ -1,8 +1,10 @@
 ---
+audio_size: 2983680
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/058-zuschenken.mp3
 date: 2024-07-25
-id: 058
+duration: 02:29
 layout: story
+story_number: 058
 title: Отдаю даром
 ---
 

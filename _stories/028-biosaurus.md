@@ -1,9 +1,11 @@
 ---
+audio_size: 3031200
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/028-biosaurus.mp3
 date: 2024-07-25
-id: 028
+duration: 02:31
 illustration: /images/028-biosaurus.webp
 layout: story
+story_number: 028
 title: Biosaurus
 ---
 

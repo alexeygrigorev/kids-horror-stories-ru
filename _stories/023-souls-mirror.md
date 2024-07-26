@@ -1,9 +1,11 @@
 ---
+audio_size: 3101760
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/023-souls-mirror.mp3
 date: 2024-07-25
-id: '023'
+duration: 02:35
 illustration: /images/023-souls-mirror.webp
 layout: story
+story_number: '023'
 title: Зеркало души
 ---
 

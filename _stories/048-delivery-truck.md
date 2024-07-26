@@ -1,9 +1,11 @@
 ---
+audio_size: 3140640
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/048-delivery-truck.mp3
 date: 2024-07-25
-id: 048
+duration: 02:37
 illustration: /images/048-delivery-truck.webp
 layout: story
+story_number: 048
 title: Грузовичок-доставщик
 ---
 

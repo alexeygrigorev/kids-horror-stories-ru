@@ -1,9 +1,11 @@
 ---
+audio_size: 2940960
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/026-manhole-mystery.mp3
 date: 2024-07-25
-id: '026'
+duration: 02:27
 illustration: /images/026-manhole-mystery.webp
 layout: story
+story_number: '026'
 title: Тайна канализационного люка
 ---
 

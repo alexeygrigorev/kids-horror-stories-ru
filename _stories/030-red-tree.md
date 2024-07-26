@@ -1,9 +1,11 @@
 ---
+audio_size: 2756640
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/030-red-tree.mp3
 date: 2024-07-25
-id: '030'
+duration: 02:17
 illustration: /images/030-red-tree.webp
 layout: story
+story_number: '030'
 title: Красное дерево
 ---
 

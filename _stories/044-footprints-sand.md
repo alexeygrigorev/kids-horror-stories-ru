@@ -1,9 +1,11 @@
 ---
+audio_size: 3646560
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/044-footprints-sand.mp3
 date: 2024-07-25
-id: '044'
+duration: 03:02
 illustration: /images/044-footprints-sand.webp
 layout: story
+story_number: '044'
 title: Отпечатки на песке
 ---
 

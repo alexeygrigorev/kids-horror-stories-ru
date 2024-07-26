@@ -1,9 +1,11 @@
 ---
+audio_size: 2686560
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/035-bush.mp3
 date: 2024-07-25
-id: '035'
+duration: 02:14
 illustration: /images/035-bush.webp
 layout: story
+story_number: '035'
 title: Куст
 ---
 

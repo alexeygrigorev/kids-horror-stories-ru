@@ -1,8 +1,10 @@
 ---
+audio_size: 3362880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/081-damned-mask.mp3
 date: 2024-07-26
-id: 081
+duration: 02:48
 layout: story
+story_number: 081
 title: Маска проклятия
 ---
 

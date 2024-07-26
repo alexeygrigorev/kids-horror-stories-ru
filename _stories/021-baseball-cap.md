@@ -1,9 +1,11 @@
 ---
+audio_size: 3242880
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/021-baseball-cap.mp3
 date: 2024-07-25
-id: '021'
+duration: 02:42
 illustration: /images/021-baseball-cap.webp
 layout: story
+story_number: '021'
 title: Бейсболка
 ---
 

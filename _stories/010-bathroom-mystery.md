@@ -1,9 +1,11 @@
 ---
+audio_size: 2705760
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/010-bathroom-mystery.mp3
 date: 2024-07-25
-id: '010'
+duration: 02:15
 illustration: /images/010-bathroom-mystery.webp
 layout: story
+story_number: '010'
 title: Тайна ванной комнаты
 ---
 

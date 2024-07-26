@@ -1,7 +1,7 @@
 title: Детские Страшилки
 description: Коллекция детских рассказов-страшилок на русском языке
-baseurl: "/kids-horror-stories-ru"
-url: "https://alexeygrigorev.github.io"
+# baseurl: "/kids-horror-stories-ru"
+# url: "https://alexeygrigorev.github.io"
 permalink: /:title/
 
 collections:
@@ -24,3 +24,10 @@ paginate_path: "/page:num/"
 
 sass:
   style: compressed
+
+podcast:
+  url: "https://alexeygrigorev.com/kids-horror-stories-ru/"
+  author: "Alexey Grigorev"
+  email: "alexey.s.grigoriev@gmail.com"
+  title: "Детские Страшилки"
+  description: "Аркаша и его папа фотографируют разные предметы и создают страшные и захватывающие истории на основе этих фотографий"

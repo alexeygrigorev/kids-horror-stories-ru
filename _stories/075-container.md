@@ -1,10 +1,12 @@
 ---
+audio_size: 2759520
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/075-container.mp3
 date: 2024-07-26
-id: '075'
-layout: story
-title: Контейнеры забвения
+duration: 02:17
 illustration: /images/075-container.webp
+layout: story
+story_number: '075'
+title: Контейнеры забвения
 ---
 
 На окраине города, в одном из тихих жилых районов, стоял двор, обнесенный высоким забором. В этом дворе находились ряды контейнеров для мусора, которые, казалось бы, ничем не отличались от обычных. Но местные жители знали, что здесь происходит что-то странное.

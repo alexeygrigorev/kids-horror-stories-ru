@@ -1,9 +1,11 @@
 ---
+audio_size: 2852160
 audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/014-notification.mp3
 date: 2024-07-25
-id: '014'
+duration: 02:22
 illustration: /images/014-notification.webp
 layout: story
+story_number: '014'
 title: Уведомление
 ---
 
