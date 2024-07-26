@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Тайна заброшенной стройки"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/066-abandonded-contruction-site.mp3
 date: 2024-07-26
-# illustration: /images/066-abandonded-contruction-site.webp
-id: "066"
+id: '066'
+layout: story
+title: Тайна заброшенной стройки
 ---
 
 Когда-то этот район города был оживлённым и полным жизни, но годы прошли, и многие здания опустели. Власти решили начать масштабную реконструкцию, чтобы вдохнуть новую жизнь в этот уголок. Но никто не предполагал, что под тоннами бетона и земли скрывается тёмная тайна.

@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Призрак Чебурашки"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/060-cheburashka.mp3
 date: 2024-07-25
-# illustration: /images/060-cheburashka.webp
-id: "060"
+id: '060'
+layout: story
+title: Призрак Чебурашки
 ---
 
 В тихом районе Берлина, вдали от шума и суеты, располагался детский сад "Чебурашка". Яркая вывеска и дружелюбное оформление привлекали множество детей, а родители были уверены, что их дети в надежных руках.

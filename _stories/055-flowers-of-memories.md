@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Цветы воспоминаний"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/055-flowers-of-memories.mp3
 date: 2024-07-25
-# illustration: /images/055-flowers-of-memories.webp
-id: "055"
+id: '055'
+layout: story
+title: Цветы воспоминаний
 ---
 
 В небольшом городке на окраине стоял старый дом, окруженный красивым садом. Местные жители всегда удивлялись, как в этом саду могли цвести самые разнообразные и редкие цветы. Однако мало кто знал, что за этой красотой скрывалась мрачная тайна.

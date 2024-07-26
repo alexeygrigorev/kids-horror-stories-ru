@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Отдаю даром"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/058-zuschenken.mp3
 date: 2024-07-25
-# illustration: /images/058-zuschenken.webp
-id: "058"
+id: 058
+layout: story
+title: Отдаю даром
 ---
 
 В одном тихом районе города, возле старого дома, всегда можно было найти оставленные вещи с надписью "Даром". Местные жители часто пользовались этими предметами, не задумываясь о том, почему они появляются и кому принадлежали.

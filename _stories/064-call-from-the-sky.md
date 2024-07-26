@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Зов с небес"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/064-call-from-the-sky.mp3
 date: 2024-07-26
-# illustration: /images/064-call-from-the-sky.webp
-id: "064"
+id: '064'
+layout: story
+title: Зов с небес
 ---
 
 В центре города, среди высоких зданий, располагалась стройка, где стоял огромный кран. Местные жители привыкли к звукам стройки и не обращали на неё особого внимания. Но один день изменил всё.

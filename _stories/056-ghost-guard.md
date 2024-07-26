@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Призрачный сторож"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/056-ghost-guard.mp3
 date: 2024-07-25
-# illustration: /images/056-ghost-guard.webp
-id: "056"
+id: '056'
+layout: story
+title: Призрачный сторож
 ---
 
 В тихом уголке города, на одной из центральных улиц, находилась небольшая клумба, о которой знали все местные жители. На первый взгляд, это место казалось обычным, но у него была своя мрачная история.

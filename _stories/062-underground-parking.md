@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Тайна подземной парковки"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/062-underground-parking.mp3
 date: 2024-07-26
-# illustration: /images/062-underground-parking.webp
-id: "062"
+id: '062'
+layout: story
+title: Тайна подземной парковки
 ---
 
 В одном из тихих районов города находилась обычная на первый взгляд подземная парковка. Вход на неё был ограждён шлагбаумом, а дверь сбоку вела в подсобные помещения. Однако, никто не знал, что скрывается за этой неприметной дверью.

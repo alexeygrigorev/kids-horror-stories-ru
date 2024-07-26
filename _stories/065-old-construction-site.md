@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Старая стройка"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/065-old-construction-site.mp3
 date: 2024-07-26
-# illustration: /images/065-old-construction-site.webp
-id: "065"
+id: '065'
+layout: story
+title: Старая стройка
 ---
 
 В одном из старых районов города, где ещё сохранялись здания довоенной постройки, началась масштабная реконструкция. Стройка была огорожена забором, и на месте бурлила техника. Местные жители, давно привыкшие к виду старых зданий, с интересом наблюдали за работами.

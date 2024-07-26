@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Тайна под сухими ветками"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/054-dry-branches.mp3
 date: 2024-07-25
-# illustration: /images/054-dry-branches.webp
-id: "054"
+id: '054'
+layout: story
+title: Тайна под сухими ветками
 ---
 
 В одном тихом районе города, под огромным старым деревом, всегда собирались дети. Они играли, строили шалаши и искали приключения. Но мало кто знал, что это дерево хранит в себе мрачную тайну.
