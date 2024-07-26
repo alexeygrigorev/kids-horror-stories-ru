@@ -16,6 +16,7 @@ client = OpenAI()
 S3_BUCKET_IMAGES = os.getenv("S3_BUCKET_IMAGES")
 PROCESS_ONE = os.getenv("PROCESS_ONE", "1") == "1"
 
+
 def download_image_to_base64(file_path):
     with open(file_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
@@ -209,88 +210,78 @@ def main():
     done_dir = Path("images_input") / "done"
     failed_dir = Path("images_input") / "failed"
 
-    success_files = []
-    failed_files = []
+    success_file = None
+    failed_file = None
 
-    if S3_BUCKET_IMAGES:
-        s3 = boto3.client("s3")
-        bucket_name, prefix = S3_BUCKET_IMAGES.split("/", 1)
-        try:
-            for obj in sorted(
+    try:
+        if S3_BUCKET_IMAGES:
+            s3 = boto3.client("s3")
+            bucket_name, prefix = S3_BUCKET_IMAGES.split("/", 1)
+            obj = sorted(
                 s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)["Contents"],
                 key=lambda x: x["Key"],
-            ):
-                object_key = obj["Key"]
-                if object_key.endswith((".jpg", ".jpeg", ".png")):
-                    try:
-                        success_file = process_image_from_s3(
-                            bucket_name, object_key, output_dir
-                        )
-                        success_files.append(success_file)
-                        if PROCESS_ONE:
-                            break
-                    except Exception as e:
-                        error_message = f"Failed to process {object_key}: {str(e)}"
-                        print(error_message)
-                        failed_files.append((object_key, error_message))
-                        if PROCESS_ONE:
-                            break
-        except (NoCredentialsError, ClientError) as e:
-            print(f"Failed to access S3 bucket: {str(e)}")
-    else:
-        input_dir = Path("images_input")
-        try:
-            for image_file in sorted(input_dir.glob("*")):
+            )[0]
+            object_key = obj["Key"]
+            if object_key.endswith((".jpg", ".jpeg", ".png")):
+                success_file = process_image_from_s3(
+                    bucket_name, object_key, output_dir
+                )
+        else:
+            input_dir = Path("images_input")
+            image_files = sorted(input_dir.glob("*"))
+
+            image_file_good = None
+            for image_file in image_files:
                 if image_file.is_file() and image_file.suffix.lower() in [
                     ".jpg",
                     ".jpeg",
                     ".png",
                 ]:
-                    success_file = process_image(image_file, output_dir)
-                    success_files.append(success_file)
+                    image_file_good = image_file
+                    break
 
-                    if PROCESS_ONE:
-                        break
-        except Exception as e:
-            error_message = f"Failed to process {image_file.name}: {str(e)}"
-            print(error_message)
-            failed_files.append((image_file, error_message))
+            success_file = process_image(image_file_good, output_dir)
+    except Exception as e:
+        error_message = f"Failed to process: {str(e)}"
+        print(error_message)
+        failed_file = (
+            image_file if not S3_BUCKET_IMAGES else object_key,
+            error_message,
+        )
 
-    if failed_files:
+    if failed_file:
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-        
+
         Path("logs").mkdir(exist_ok=True)
         log_file = Path("logs") / f"logs-{timestamp}.txt"
         with open(log_file, "w") as log:
-            for file, error in failed_files:
-                log.write(f"{file}: {error}\n")
-                if S3_BUCKET_IMAGES:
-                    s3.copy_object(
-                        Bucket=bucket_name,
-                        CopySource={"Bucket": bucket_name, "Key": file},
-                        Key=f"failed/{file.split('/')[-1]}",
-                    )
-                    s3.delete_object(Bucket=bucket_name, Key=file)
-                else:
-                    failed_dir.mkdir(exist_ok=True)
-                    new_location = failed_dir / file.name
-                    file.rename(new_location)
-                    print(f"Moved file to: {new_location}")
+            log.write(f"{failed_file[0]}: {failed_file[1]}\n")
+            if S3_BUCKET_IMAGES:
+                s3.copy_object(
+                    Bucket=bucket_name,
+                    CopySource={"Bucket": bucket_name, "Key": failed_file[0]},
+                    Key=f"failed/{failed_file[0].split('/')[-1]}",
+                )
+                s3.delete_object(Bucket=bucket_name, Key=failed_file[0])
+            else:
+                failed_dir.mkdir(exist_ok=True)
+                new_location = failed_dir / failed_file[0].name
+                failed_file[0].rename(new_location)
+                print(f"Moved file to: {new_location}")
         print(f"Log file created: {log_file}")
 
-    # Move all successfully processed files
-    for file in success_files:
+    if success_file:
         if S3_BUCKET_IMAGES:
             s3.copy_object(
                 Bucket=bucket_name,
-                CopySource={"Bucket": bucket_name, "Key": file},
-                Key=f"done/{file.split('/')[-1]}",
+                CopySource={"Bucket": bucket_name, "Key": success_file},
+                Key=f"done/{success_file.split('/')[-1]}",
             )
-            s3.delete_object(Bucket=bucket_name, Key=file)
+            s3.delete_object(Bucket=bucket_name, Key=success_file)
         else:
             done_dir.mkdir(exist_ok=True)
-            new_location = done_dir / file.name
-            file.rename(new_location)
+            new_location = done_dir / success_file.name
+            success_file.rename(new_location)
             print(f"Moved file to: {new_location}")
 
 
