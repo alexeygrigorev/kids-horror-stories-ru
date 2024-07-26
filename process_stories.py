@@ -50,7 +50,7 @@ def create_story(base64_image):
     """
 
     story_response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
             {
                 "role": "user",
