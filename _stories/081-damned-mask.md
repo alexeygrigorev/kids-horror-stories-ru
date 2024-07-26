@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Маска проклятия"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/081-damned-mask.mp3
 date: 2024-07-26
-# illustration: /images/081-damned-mask.webp
-id: "081"
+id: 081
+layout: story
+title: Маска проклятия
 ---
 
 Эта маска, с причудливыми узорами и зловещим видом, стала известна как "Маска Проклятия". Её история началась много лет назад, когда она была создана талантливым, но мрачным мастером масок по имени Виктор.
