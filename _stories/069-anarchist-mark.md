@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Метка анархиста"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/069-anarchist-mark.mp3
 date: 2024-07-26
-# illustration: /images/069-anarchist-mark.webp
-id: "069"
+id: 069
+layout: story
+title: Метка анархиста
 ---
 
 На стене старого дома появился новый граффити — символ анархии, нарисованный красной краской. Казалось бы, обычный акт вандализма, но у этого символа была своя мрачная история.

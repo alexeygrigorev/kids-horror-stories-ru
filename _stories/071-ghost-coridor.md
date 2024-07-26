@@ -1,9 +1,9 @@
 ---
-layout: story
-title: "Призрачный коридор"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/071-ghost-coridor.mp3
 date: 2024-07-26
-# illustration: /images/071-ghost-coridor.webp
-id: "071"
+id: '071'
+layout: story
+title: Призрачный коридор
 ---
 
 В старом доме на окраине города, за толстенными дверями и полустёртым мозаичным полом, скрывался коридор, который местные жители называли "Призрачным". Внешне это был обычный подъезд, но он хранил свои мрачные тайны.
