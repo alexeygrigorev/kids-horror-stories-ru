@@ -10,6 +10,7 @@ python-frontmatter = "*"
 tqdm = "*"
 mutagen = "*"
 requests = "*"
+pillow = "*"
 
 [dev-packages]
 
