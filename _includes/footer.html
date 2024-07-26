@@ -1,3 +1,9 @@
 <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    {% if site.podcast.spotify %}
+    <a href="{{ site.podcast.spotify }}" target="_blank">
+        Слушать на Spotify
+    </a>
+    {% endif %}
+    </p>
 </footer>
