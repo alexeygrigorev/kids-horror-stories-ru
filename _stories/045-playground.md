@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Детская площадка"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/045-playground.mp3
 date: 2024-07-25
+id: '045'
 illustration: /images/045-playground.webp
-id: "045"
+layout: story
+title: Детская площадка
 ---
 
 Эта детская площадка в тихом районе города всегда привлекала детей и родителей своим уютом и зеленью. Но местные жители помнят старую историю, которая добавляет этому месту оттенок мрака и таинственности.

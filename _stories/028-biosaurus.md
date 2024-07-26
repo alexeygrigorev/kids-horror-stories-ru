@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Biosaurus"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/028-biosaurus.mp3
 date: 2024-07-25
+id: 028
 illustration: /images/028-biosaurus.webp
-id: "028"
+layout: story
+title: Biosaurus
 ---
 
 В маленьком городке, окруженном горами и лесами, жил мальчик по имени Миша. Он был обычным ребенком, который любил играть с друзьями и есть различные вкусности. Однажды в местном магазине появились новые снековые продукты под названием "Biosaurus". Миша сразу обратил на них внимание, ведь на упаковке был изображен милый динозаврик.

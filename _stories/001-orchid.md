@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Орхидея на окне"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/001-orchid.mp3
 date: 2024-07-24
+id: '001'
 illustration: /images/001-orchid.webp
-id: "001"
+layout: story
+title: Орхидея на окне
 ---
 
 Существует одна история, ходящая среди старых жителей небольшого города, который уже давно забыл свои корни. История о странной орхидее, что прижилась на окне в одном из домов на улице Призрачной.

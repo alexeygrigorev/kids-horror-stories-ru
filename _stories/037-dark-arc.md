@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Арка в темноту"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/037-dark-arc.mp3
 date: 2024-07-25
+id: '037'
 illustration: /images/037-dark-arc.webp
-id: "037"
+layout: story
+title: Арка в темноту
 ---
 
 Этот дом в центре города всегда выглядел обычным. Люди спешили мимо, не обращая внимания на серые стены и окна, из которых выглядывали занавески. Но те, кто жил здесь давно, знали: этот проход под аркой ведёт не просто на задний двор.

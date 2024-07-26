@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Лужайка"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/032-lawn.mp3
 date: 2024-07-25
+id: '032'
 illustration: /images/032-lawn.webp
-id: "032"
+layout: story
+title: Лужайка
 ---
 
 В маленьком городке был парк, известный своим загадочным прошлым. Местные жители старались обходить его стороной, особенно ночью, из-за слухов о странных исчезновениях и загадочных событиях.

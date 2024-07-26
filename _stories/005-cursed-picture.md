@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Лицо Теней"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/005-cursed-picture.mp3
 date: 2024-07-25
+id: '005'
 illustration: /images/005-cursed-picture.webp
-id: "005"
+layout: story
+title: Лицо Теней
 ---
 
 Существует одна городская легенда о картине, которую называли "Лицо Теней". Всякий, кто вешал её на стену, начинал замечать странные вещи, происходящие в доме.

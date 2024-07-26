@@ -1,9 +1,10 @@
 ---
-layout: story
-title: "Куст"
+audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/035-bush.mp3
 date: 2024-07-25
+id: '035'
 illustration: /images/035-bush.webp
-id: "035"
+layout: story
+title: Куст
 ---
 
 В одном тихом городке, на окраине улицы, рос куст, который привлекал внимание всех прохожих. Его ярко-зеленый цвет выделялся среди серых стен и скучной городской природы. Но мало кто знал, что этот куст был не простым украшением.
