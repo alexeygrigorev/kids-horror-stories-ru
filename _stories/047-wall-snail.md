@@ -2,7 +2,7 @@
 layout: story
 title: "Улитка на стене"
 date: 2024-07-25
-# illustration: /assets/images/047-wall-snail.jpg
+illustration: /images/047-wall-snail.webp
 id: "047"
 ---
 

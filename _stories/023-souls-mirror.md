@@ -2,7 +2,7 @@
 layout: story
 title: "Зеркало души"
 date: 2024-07-25
-# illustration: /assets/images/023-souls-mirror.jpg
+illustration: /images/023-souls-mirror.webp
 id: "023"
 ---
 

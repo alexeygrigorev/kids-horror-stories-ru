@@ -2,7 +2,7 @@
 layout: story
 title: "Красное дерево"
 date: 2024-07-25
-# illustration: /assets/images/030-red-tree.jpg
+illustration: /images/030-red-tree.webp
 id: "030"
 ---
 

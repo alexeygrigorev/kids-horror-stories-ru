@@ -2,7 +2,7 @@
 layout: story
 title: "Грузовичок-доставщик"
 date: 2024-07-25
-# illustration: /assets/images/048-delivery-truck.jpg
+illustration: /images/048-delivery-truck.webp
 id: "048"
 ---
 

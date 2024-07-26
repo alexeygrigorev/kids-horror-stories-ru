@@ -2,7 +2,7 @@
 layout: story
 title: "Оранжевая урна"
 date: 2024-07-25
-# illustration: /assets/images/049-orange-trash-can.jpg
+illustration: /images/049-orange-trash-can.webp
 id: "049"
 ---
 

@@ -2,7 +2,7 @@
 layout: story
 title: "Бейсболка"
 date: 2024-07-25
-# illustration: /images/021-baseball-cap.webp
+illustration: /images/021-baseball-cap.webp
 id: "021"
 ---
 

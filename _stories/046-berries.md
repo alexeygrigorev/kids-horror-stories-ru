@@ -2,7 +2,7 @@
 layout: story
 title: "Запретные ягоды"
 date: 2024-07-25
-# illustration: /assets/images/046-berries.jpg
+illustration: /images/046-berries.webp
 id: "046"
 ---
 

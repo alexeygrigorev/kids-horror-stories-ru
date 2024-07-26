@@ -2,7 +2,7 @@
 layout: story
 title: "Тропинка среди деревьев"
 date: 2024-07-25
-# illustration: /assets/images/041-path-among-trees.jpg
+illustration: /images/041-path-among-trees.webp
 id: "041"
 ---
 

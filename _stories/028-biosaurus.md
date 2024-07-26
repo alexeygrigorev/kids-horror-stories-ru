@@ -2,7 +2,7 @@
 layout: story
 title: "Biosaurus"
 date: 2024-07-25
-# illustration: /assets/images/028-biosaurus.jpg
+illustration: /images/028-biosaurus.webp
 id: "028"
 ---
 

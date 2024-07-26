@@ -2,7 +2,7 @@
 layout: story
 title: "Отпечатки на песке"
 date: 2024-07-25
-# illustration: /assets/images/044-footprints-sand.jpg
+illustration: /images/044-footprints-sand.webp
 id: "044"
 ---
 
