@@ -240,8 +240,6 @@ def process_image_from_s3(bucket_name, object_key, output_dir):
 def main():
     output_dir = Path("_stories")
     output_dir.mkdir(exist_ok=True)
-    done_dir = Path("images_input") / "done"
-    failed_dir = Path("images_input") / "failed"
 
     success_file = None
     failed_file = None
@@ -249,16 +247,25 @@ def main():
     try:
         if S3_BUCKET_IMAGES:
             s3 = boto3.client("s3")
-            bucket_name, prefix = S3_BUCKET_IMAGES.split("/", 1)
-            obj = sorted(
-                s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)["Contents"],
-                key=lambda x: x["Key"],
-            )[0]
-            object_key = obj["Key"]
-            if object_key.endswith((".jpg", ".jpeg", ".png")):
-                success_file = process_image_from_s3(
-                    bucket_name, object_key, output_dir
-                )
+            bucket_name = S3_BUCKET_IMAGES.split("/")[0]
+            prefix = "input/"
+            response = s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+
+            if "Contents" in response:
+                objects = sorted(response["Contents"], key=lambda x: x["Key"])
+                object_key_good = None
+                for obj in objects:
+                    object_key = obj["Key"]
+                    if object_key.lower().endswith((".jpg", ".jpeg", ".png")):
+                        object_key_good = object_key
+                        break
+                
+                if object_key_good is not None:
+                    success_file = process_image_from_s3(
+                        bucket_name, object_key, output_dir
+                    )
+            else:
+                print(f"No files found in {bucket_name}/{prefix}")
         else:
             input_dir = Path("images_input")
             image_files = sorted(input_dir.glob("*"))
@@ -277,10 +284,7 @@ def main():
     except Exception as e:
         error_message = f"Failed to process: {str(e)}"
         print(error_message)
-        failed_file = (
-            image_file if not S3_BUCKET_IMAGES else object_key,
-            error_message,
-        )
+        failed_file = (object_key if S3_BUCKET_IMAGES else image_file, error_message)
 
     if failed_file:
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -297,6 +301,7 @@ def main():
                 )
                 s3.delete_object(Bucket=bucket_name, Key=failed_file[0])
             else:
+                failed_dir = Path("images_input") / "failed"
                 failed_dir.mkdir(exist_ok=True)
                 new_location = failed_dir / failed_file[0].name
                 failed_file[0].rename(new_location)
@@ -312,6 +317,7 @@ def main():
             )
             s3.delete_object(Bucket=bucket_name, Key=success_file)
         else:
+            done_dir = Path("images_input") / "done"
             done_dir.mkdir(exist_ok=True)
             new_location = done_dir / success_file.name
             success_file.rename(new_location)
