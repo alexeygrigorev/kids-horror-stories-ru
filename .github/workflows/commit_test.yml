@@ -1,0 +1,27 @@
+name: Commit test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  process-stories:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Test
+      run: |
+        date > test.txt
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Add new stories and images" || echo "No changes to commit"
+        git push

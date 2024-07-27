@@ -1,0 +1,40 @@
+name: Process Stories
+
+on:
+  # schedule:
+  #   - cron: '*/15 * * * *'  # Runs every 15 minutes
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  process-stories:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        pip install pipenv
+        pipenv install
+
+    - name: Run process_stories.py
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: 'eu-west-1'
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        S3_BUCKET_IMAGES: 'kids-horror-stories-ru-images'
+      run: |
+        pipenv run python process_stories.py
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Add new stories and images" || echo "No changes to commit"
+        git push
