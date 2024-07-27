@@ -137,6 +137,21 @@ def create_illustration_prompt(story):
     return illustration_prompt.choices[0].message.content
 
 
+def edit_story(story):
+    prompt = f"""
+    Ты редактор историй ужасов. Исправь эту историю. Сделай так, чтобы вся грамматика была понятна, и чтобы не было странных выражений. Замени их на более понятные.
+    
+    История:
+
+    {story}
+    """.strip()
+
+    result = client.chat.completions.create(
+        model="gpt-4o", messages=[{"role": "user", "content": prompt}]
+    )
+
+    return result.choices[0].message.content
+
 def generate_illustration(prompt):
     illustration_response = client.images.generate(
         model="dall-e-3",
@@ -201,6 +216,7 @@ def process_image(image_path, output_dir):
     print(f"Processing image: {image_path}")
     base64_image = download_image_to_base64(image_path)
     title, slug, story = create_story(base64_image)
+    story = edit_story(story)
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
@@ -224,6 +240,7 @@ def process_image_from_s3(bucket_name, object_key, output_dir):
 
     base64_image = base64.b64encode(image_data).decode("utf-8")
     title, slug, story = create_story(base64_image)
+    story = edit_story(story)
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
