@@ -14,7 +14,10 @@ from io import BytesIO
 client = OpenAI()
 
 S3_BUCKET_IMAGES = os.getenv("S3_BUCKET_IMAGES")
-PROCESS_ONE = os.getenv("PROCESS_ONE", "1") == "1"
+
+
+output_image_size = 512
+output_image_quality = 80
 
 
 def download_image_to_base64(file_path):
@@ -34,6 +37,12 @@ def resize_image(image_data, size=(512, 512)):
     buffer = BytesIO()
     image.save(buffer, format="JPEG", quality=90)
     return buffer
+
+
+def resize_and_save_original_image(input_path, output_path, size=output_image_size):
+    with Image.open(input_path) as img:
+        img.thumbnail((size, size), Image.LANCZOS)
+        img.save(output_path, "JPEG", quality=output_image_quality)
 
 
 def create_story(base64_image):
@@ -153,7 +162,9 @@ def get_next_story_id(output_dir):
     return max_id + 1
 
 
-def save_story(title, slug, story, illustration_url, output_dir, story_id):
+def save_story(
+    title, slug, story, illustration_url, output_dir, story_id, original_image_path
+):
     formatted_slug = f"{str(story_id).zfill(3)}-{slug}"
     story_file = Path(output_dir) / f"{formatted_slug}.md"
     post = frontmatter.Post(story)
@@ -162,12 +173,18 @@ def save_story(title, slug, story, illustration_url, output_dir, story_id):
     post["illustration"] = f"/images/{formatted_slug}.jpg"
     post["story_number"] = str(story_id).zfill(3)
     post["date"] = datetime.datetime.now().strftime("%Y-%m-%d")
+
+    # Save and add original image information
+    image_folder = Path("images")
+    image_folder.mkdir(exist_ok=True)
+    original_image_output_path = image_folder / f"{formatted_slug}-source.jpg"
+    resize_and_save_original_image(original_image_path, original_image_output_path)
+    post["image_source"] = f"/images/{formatted_slug}-source.jpg"
+
     frontmatter.dump(post, story_file)
     print(f"Saved story: {story_file}")
 
     # Save illustration to the images folder
-    image_folder = Path("images")
-    image_folder.mkdir(exist_ok=True)
     illustration_path = image_folder / f"{formatted_slug}.jpg"
 
     # Fetch and resize the illustration
@@ -186,20 +203,37 @@ def process_image(image_path, output_dir):
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
-    save_story(title, slug, story, illustration_url, output_dir, story_id)
+    save_story(title, slug, story, illustration_url, output_dir, story_id, image_path)
     generate_audio(f"{str(story_id).zfill(3)}-{slug}")
     return Path(image_path)
 
 
 def process_image_from_s3(bucket_name, object_key, output_dir):
     print(f"Processing image from S3: {object_key}")
-    base64_image = download_image_from_s3_to_base64(bucket_name, object_key)
+    s3 = boto3.client("s3")
+
+    # Download the image from S3
+    response = s3.get_object(Bucket=bucket_name, Key=object_key)
+    image_data = response["Body"].read()
+
+    # Save the image temporarily
+    temp_image_path = Path("temp_image.jpg")
+    with open(temp_image_path, "wb") as f:
+        f.write(image_data)
+
+    base64_image = base64.b64encode(image_data).decode("utf-8")
     title, slug, story = create_story(base64_image)
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
-    save_story(title, slug, story, illustration_url, output_dir, story_id)
+    save_story(
+        title, slug, story, illustration_url, output_dir, story_id, temp_image_path
+    )
     generate_audio(f"{str(story_id).zfill(3)}-{slug}")
+
+    # Remove the temporary image
+    temp_image_path.unlink()
+
     return object_key
 
 

@@ -15,3 +15,4 @@ images_input/*.png
 images_input/done/
 
 .ipynb_checkpoints/
+temp_image.jpg
