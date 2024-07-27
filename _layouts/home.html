@@ -5,7 +5,7 @@ layout: default
 <ul class="story-list">
     {% for story in site.stories reversed %}
     <li>
-        <span class="story-date">{{ story.date | date: "%d.%m.%Y" }}</span>
+        <span class="story-number">№{{ story.story_number }}</span>
         <a href="{{ story.url | relative_url }}">{{ story.title }}</a>
     </li>
     {% endfor %}

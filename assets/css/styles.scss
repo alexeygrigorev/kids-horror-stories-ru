@@ -56,18 +56,19 @@ header {
 }
 
 .story-list {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .story-list li {
     margin-bottom: 0.5rem;
 }
 
-.story-date {
+.story-number {
     font-size: 0.9em;
     opacity: 0.8;
     margin-right: 0.5rem;
+    font-weight: bold;
 }
 
 .pagination {
