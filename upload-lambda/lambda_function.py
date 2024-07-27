@@ -1,7 +1,6 @@
 import json
-import base64
-import os
 import boto3
+from botocore.exceptions import NoCredentialsError
 
 s3 = boto3.client("s3")
 
@@ -16,7 +15,7 @@ def lambda_handler(event, context):
     if event["routeKey"] == "GET /":
         return serve_html()
     elif event["routeKey"] == "POST /":
-        return upload_files(event)
+        return generate_presigned_url(event)
     else:
         return {
             "statusCode": 405,
@@ -37,7 +36,7 @@ def serve_html():
         return {"statusCode": 500, "body": json.dumps({"error": str(e)})}
 
 
-def upload_files(event):
+def generate_presigned_url(event):
     try:
         headers = event["headers"]
         password = headers.get("password")
@@ -49,24 +48,24 @@ def upload_files(event):
             }
 
         body = json.loads(event["body"])
-        files = body["files"]
+        file_name = "input/" + body["file_name"]
+        content_type = body["content_type"]
 
-        for file in files:
-            file_name = file["file_name"]
-            key = f"input/{file_name}"
-            content_type = file["content_type"]
-            file_content = base64.b64decode(file["file_content"])
+        presigned_url = s3.generate_presigned_url(
+            "put_object",
+            Params={
+                "Bucket": BUCKET_NAME,
+                "Key": file_name,
+                "ContentType": content_type,
+            },
+            ExpiresIn=3600,
+        )
 
-            s3.put_object(
-                Bucket=BUCKET_NAME,
-                Key=key,
-                Body=file_content,
-                ContentType=content_type,
-            )
-
+        return {"statusCode": 200, "body": json.dumps({"url": presigned_url})}
+    except NoCredentialsError:
         return {
-            "statusCode": 200,
-            "body": json.dumps({"message": "Files uploaded successfully"}),
+            "statusCode": 403,
+            "body": json.dumps({"message": "Credentials not available"}),
         }
     except Exception as e:
         return {"statusCode": 500, "body": json.dumps({"error": str(e)})}

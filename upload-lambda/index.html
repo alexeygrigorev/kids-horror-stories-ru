@@ -39,6 +39,25 @@
         .container button:hover {
             background-color: #218838;
         }
+        .progress-container {
+            width: 100%;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            width: 0;
+            background-color: #28a745;
+            border-radius: 4px;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+        .loading {
+            display: none;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +66,9 @@
             <input type="password" id="passwordInput" placeholder="Enter Password">
             <input type="file" id="fileInput" name="file" multiple>
             <button type="button" onclick="uploadFiles()">Upload</button>
+            <div class="loading" id="loadingIndicator">Uploading files, please wait...</div>
         </form>
+        <div id="progressBarsContainer"></div>
     </div>
 
     <script>
@@ -63,6 +84,8 @@
             const password = passwordInput.value;
             const fileInput = document.getElementById('fileInput');
             const files = fileInput.files;
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const progressBarsContainer = document.getElementById('progressBarsContainer');
 
             if (!password) {
                 alert('Please enter the password.');
@@ -75,27 +98,42 @@
             }
 
             localStorage.setItem('uploadPassword', password);
+            loadingIndicator.style.display = 'block';
+            progressBarsContainer.innerHTML = '';
 
-            const fileData = [];
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
+                const progressBar = createProgressBar(file.name);
+                progressBarsContainer.appendChild(progressBar);
+
+                const fileData = await getFileData(file);
+                const presignedUrl = await getPresignedUrl(password, file.name, file.type);
+
+                if (presignedUrl) {
+                    await uploadToS3(presignedUrl, file, progressBar);
+                }
+            }
+
+            loadingIndicator.style.display = 'none';
+            alert('Files uploaded successfully');
+            location.reload();
+        }
+
+        function getFileData(file) {
+            return new Promise((resolve, reject) => {
                 const reader = new FileReader();
                 reader.onload = (event) => {
-                    fileData.push({
+                    resolve({
                         file_name: file.name,
                         content_type: file.type,
                         file_content: event.target.result.split(',')[1]
                     });
-
-                    if (fileData.length === files.length) {
-                        sendFiles(password, fileData);
-                    }
                 };
                 reader.readAsDataURL(file);
-            }
+            });
         }
 
-        async function sendFiles(password, fileData) {
+        async function getPresignedUrl(password, fileName, contentType) {
             const response = await fetch(window.location.href, {
                 method: 'POST',
                 headers: {
@@ -103,16 +141,63 @@
                     'password': password,
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify({ files: fileData })
+                body: JSON.stringify({ file_name: fileName, content_type: contentType })
             });
 
             const result = await response.json();
             if (response.ok) {
-                alert('Files uploaded successfully');
-                location.reload();
+                return result.url;
             } else {
-                alert('Error uploading files: ' + result.message);
+                alert('Error getting presigned URL: ' + result.message);
+                return null;
             }
+        }
+
+        async function uploadToS3(presignedUrl, file, progressBar) {
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('PUT', presignedUrl, true);
+                xhr.setRequestHeader('Content-Type', file.type);
+
+                xhr.upload.onprogress = (event) => {
+                    if (event.lengthComputable) {
+                        const percentage = Math.round((event.loaded / event.total) * 100);
+                        progressBar.querySelector('.progress-bar').style.width = percentage + '%';
+                        progressBar.querySelector('.progress-bar').innerText = percentage + '%';
+                    }
+                };
+
+                xhr.onload = () => {
+                    if (xhr.status === 200) {
+                        resolve();
+                    } else {
+                        reject(new Error('Failed to upload file'));
+                    }
+                };
+
+                xhr.onerror = () => {
+                    reject(new Error('Failed to upload file'));
+                };
+
+                xhr.send(file);
+            });
+        }
+
+        function createProgressBar(fileName) {
+            const progressContainer = document.createElement('div');
+            progressContainer.className = 'progress-container';
+
+            const progressBar = document.createElement('div');
+            progressBar.className = 'progress-bar';
+            progressBar.innerText = '0%';
+
+            const label = document.createElement('label');
+            label.innerText = fileName;
+
+            progressContainer.appendChild(label);
+            progressContainer.appendChild(progressBar);
+
+            return progressContainer;
         }
     </script>
 </body>
