@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/168-y
 date: '2024-07-26'
 duration: 02:39
 illustration: /images/168-yellowbox.jpg
+image_source: /images/168-yellowbox-source.jpg
 slug: 168-yellowbox
 story_number: '168'
 title: Желтый ящик

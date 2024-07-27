@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/128-d
 date: '2024-07-26'
 duration: 02:43
 illustration: /images/128-death-clock.jpg
+image_source: /images/128-death-clock-source.jpg
 slug: 128-death-clock
 story_number: '128'
 title: Часы на углу

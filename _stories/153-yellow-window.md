@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/153-y
 date: '2024-07-26'
 duration: 02:42
 illustration: /images/153-yellow-window.jpg
+image_source: /images/153-yellow-window-source.jpg
 slug: 153-yellow-window
 story_number: '153'
 title: Желтое окно

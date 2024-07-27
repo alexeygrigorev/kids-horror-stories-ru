@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/197-s
 date: '2024-07-26'
 duration: 02:42
 illustration: /images/197-simple-purchase.jpg
+image_source: /images/197-simple-purchase-source.jpg
 slug: 197-simple-purchase
 story_number: '197'
 title: Самая простая покупка

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/222-s
 date: '2024-07-27'
 duration: 02:54
 illustration: /images/222-sweet-fate.jpg
+image_source: /images/222-sweet-fate-source.jpg
 slug: 222-sweet-fate
 story_number: '222'
 title: Сладкая судьба

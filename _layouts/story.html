@@ -21,6 +21,13 @@ layout: default
   {% endif %}
 
   {{ content }}
+
+  {% if page.image_source %}
+    <button class="collapsible">Показать оригинальную фотографию</button>
+    <div class="collapsible-content">
+      <img src="{{ page.image_source | relative_url }}" alt="Оригинальная фотография">
+    </div>
+  {% endif %}
 </article>
 
 {% include story_navigation.html %}

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/206-b
 date: '2024-07-27'
 duration: 02:36
 illustration: /images/206-beauty-parlor.jpg
+image_source: /images/206-beauty-parlor-source.jpg
 slug: 206-beauty-parlor
 story_number: '206'
 title: Салон красоты

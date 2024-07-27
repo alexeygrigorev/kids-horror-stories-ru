@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/136-f
 date: '2024-07-26'
 duration: 02:52
 illustration: /images/136-fear-code.jpg
+image_source: /images/136-fear-code-source.jpg
 slug: 136-fear-code
 story_number: '136'
 title: Код страха

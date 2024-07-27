@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/167-f
 date: '2024-07-26'
 duration: 02:40
 illustration: /images/167-fountain-of-the-dead.jpg
+image_source: /images/167-fountain-of-the-dead-source.jpg
 slug: 167-fountain-of-the-dead
 story_number: '167'
 title: Фонтан мертвых

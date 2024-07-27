@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/226-t
 date: '2024-07-27'
 duration: 02:38
 illustration: /images/226-tower-of-fate.jpg
+image_source: /images/226-tower-of-fate-source.jpg
 slug: 226-tower-of-fate
 story_number: '226'
 title: Башня Судьбы

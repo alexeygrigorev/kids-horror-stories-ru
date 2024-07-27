@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/205-r
 date: '2024-07-26'
 duration: 02:29
 illustration: /images/205-red-cube.jpg
+image_source: /images/205-red-cube-source.jpg
 slug: 205-red-cube
 story_number: '205'
 title: Красный Лабиринт

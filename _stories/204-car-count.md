@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/204-c
 date: '2024-07-26'
 duration: 02:46
 illustration: /images/204-car-count.jpg
+image_source: /images/204-car-count-source.jpg
 slug: 204-car-count
 story_number: '204'
 title: Машина, что отсчёт ведёт

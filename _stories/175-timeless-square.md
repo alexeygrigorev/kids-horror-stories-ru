@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/175-t
 date: '2024-07-26'
 duration: 02:33
 illustration: /images/175-timeless-square.jpg
+image_source: /images/175-timeless-square-source.jpg
 slug: 175-timeless-square
 story_number: '175'
 title: Площадь без времени

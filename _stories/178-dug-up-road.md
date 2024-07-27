@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/178-d
 date: '2024-07-26'
 duration: 03:01
 illustration: /images/178-dug-up-road.jpg
+image_source: /images/178-dug-up-road-source.jpg
 slug: 178-dug-up-road
 story_number: '178'
 title: Разрытая улица

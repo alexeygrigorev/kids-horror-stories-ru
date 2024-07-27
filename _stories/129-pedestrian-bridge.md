@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/129-p
 date: '2024-07-26'
 duration: 02:37
 illustration: /images/129-pedestrian-bridge.jpg
+image_source: /images/129-pedestrian-bridge-source.jpg
 slug: 129-pedestrian-bridge
 story_number: '129'
 title: Пешеход на мосту

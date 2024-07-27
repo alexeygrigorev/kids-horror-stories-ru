@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/154-l
 date: '2024-07-26'
 duration: 02:45
 illustration: /images/154-lost-library.jpg
+image_source: /images/154-lost-library-source.jpg
 slug: 154-lost-library
 story_number: '154'
 title: Потерянная библиотека

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/148-t
 date: '2024-07-26'
 duration: 03:03
 illustration: /images/148-the-train-that-never-stops.jpg
+image_source: /images/148-the-train-that-never-stops-source.jpg
 slug: 148-the-train-that-never-stops
 story_number: '148'
 title: Поезд, который не останавливается

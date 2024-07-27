@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/184-i
 date: '2024-07-26'
 duration: 03:21
 illustration: /images/184-icecream.jpg
+image_source: /images/184-icecream-source.jpg
 slug: 184-icecream
 story_number: '184'
 title: Мороженое

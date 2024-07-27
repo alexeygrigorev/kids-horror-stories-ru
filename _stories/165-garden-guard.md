@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/165-g
 date: '2024-07-26'
 duration: 02:34
 illustration: /images/165-garden-guard.jpg
+image_source: /images/165-garden-guard-source.jpg
 slug: 165-garden-guard
 story_number: '165'
 title: Страж сада

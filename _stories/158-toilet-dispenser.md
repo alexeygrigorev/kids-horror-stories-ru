@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/158-t
 date: '2024-07-26'
 duration: 02:28
 illustration: /images/158-toilet-dispenser.jpg
+image_source: /images/158-toilet-dispenser-source.jpg
 slug: 158-toilet-dispenser
 story_number: '158'
 title: Автомат в туалете

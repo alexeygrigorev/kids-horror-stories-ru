@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/173-s
 date: '2024-07-26'
 duration: 02:50
 illustration: /images/173-stone-guardians.jpg
+image_source: /images/173-stone-guardians-source.jpg
 slug: 173-stone-guardians
 story_number: '173'
 title: Каменные стражи

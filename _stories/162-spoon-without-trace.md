@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/162-s
 date: '2024-07-26'
 duration: 02:58
 illustration: /images/162-spoon-without-trace.jpg
+image_source: /images/162-spoon-without-trace-source.jpg
 slug: 162-spoon-without-trace
 story_number: '162'
 title: Ложка без следа

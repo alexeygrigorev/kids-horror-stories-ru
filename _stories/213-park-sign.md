@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/213-p
 date: '2024-07-27'
 duration: 02:40
 illustration: /images/213-park-sign.jpg
+image_source: /images/213-park-sign-source.jpg
 slug: 213-park-sign
 story_number: '213'
 title: Знак в парке

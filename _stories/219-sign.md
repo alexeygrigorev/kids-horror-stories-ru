@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/219-s
 date: '2024-07-27'
 duration: 02:35
 illustration: /images/219-sign.jpg
+image_source: /images/219-sign-source.jpg
 slug: 219-sign
 story_number: '219'
 title: Знак

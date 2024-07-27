@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/147-t
 date: '2024-07-26'
 duration: 02:51
 illustration: /images/147-tram-nightmare.jpg
+image_source: /images/147-tram-nightmare-source.jpg
 slug: 147-tram-nightmare
 story_number: '147'
 title: Трамвай номер 1201-Б

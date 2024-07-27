@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/169-d
 date: '2024-07-26'
 duration: 03:03
 illustration: /images/169-demon-tower.jpg
+image_source: /images/169-demon-tower-source.jpg
 slug: 169-demon-tower
 story_number: '169'
 title: Башня демонов

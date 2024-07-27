@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/202-w
 date: '2024-07-26'
 duration: 03:04
 illustration: /images/202-waiting-box.jpg
+image_source: /images/202-waiting-box-source.jpg
 slug: 202-waiting-box
 story_number: '202'
 title: Ящик ожидания

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/145-l
 date: '2024-07-26'
 duration: 03:09
 illustration: /images/145-lonely-pigeon.jpg
+image_source: /images/145-lonely-pigeon-source.jpg
 slug: 145-lonely-pigeon
 story_number: '145'
 title: Одинокий голубь

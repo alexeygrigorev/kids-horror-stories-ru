@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/157-d
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/157-door-note.jpg
+image_source: /images/157-door-note-source.jpg
 slug: 157-door-note
 story_number: '157'
 title: Надпись на двери

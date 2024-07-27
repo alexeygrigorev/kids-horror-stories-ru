@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/137-w
 date: '2024-07-26'
 duration: 02:33
 illustration: /images/137-watch-without-time.jpg
+image_source: /images/137-watch-without-time-source.jpg
 slug: 137-watch-without-time
 story_number: '137'
 title: Часы без времени

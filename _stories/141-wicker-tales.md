@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/141-w
 date: '2024-07-26'
 duration: 02:34
 illustration: /images/141-wicker-tales.jpg
+image_source: /images/141-wicker-tales-source.jpg
 slug: 141-wicker-tales
 story_number: '141'
 title: Плетеные истории

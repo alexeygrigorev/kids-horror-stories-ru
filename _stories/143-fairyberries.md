@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/143-f
 date: '2024-07-26'
 duration: 02:30
 illustration: /images/143-fairyberries.jpg
+image_source: /images/143-fairyberries-source.jpg
 slug: 143-fairyberries
 story_number: '143'
 title: Ярмарочный клубок

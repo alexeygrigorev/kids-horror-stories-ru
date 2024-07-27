@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/152-d
 date: '2024-07-26'
 duration: 02:47
 illustration: /images/152-dark-corner.jpg
+image_source: /images/152-dark-corner-source.jpg
 slug: 152-dark-corner
 story_number: '152'
 title: Темный уголок парка

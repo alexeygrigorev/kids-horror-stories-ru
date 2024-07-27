@@ -105,3 +105,21 @@ header {
         width: 100%;
     }
 }
+
+.collapsible {
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.collapsible-content img {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+}

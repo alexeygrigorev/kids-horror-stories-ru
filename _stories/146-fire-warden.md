@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/146-f
 date: '2024-07-26'
 duration: 03:00
 illustration: /images/146-fire-warden.jpg
+image_source: /images/146-fire-warden-source.jpg
 slug: 146-fire-warden
 story_number: '146'
 title: Огненный страж

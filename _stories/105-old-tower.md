@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/105-o
 date: '2024-07-26'
 duration: 02:34
 illustration: /images/105-old-tower.jpg
+image_source: /images/105-old-tower-source.jpg
 slug: 105-old-tower
 story_number: '105'
 title: Старая колокольня

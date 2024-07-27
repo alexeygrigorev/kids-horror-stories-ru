@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/216-s
 date: '2024-07-27'
 duration: 02:41
 illustration: /images/216-stair-watcher.jpg
+image_source: /images/216-stair-watcher-source.jpg
 slug: 216-stair-watcher
 story_number: '216'
 title: Смотрящий со ступенек

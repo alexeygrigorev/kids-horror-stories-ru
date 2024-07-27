@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/203-r
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/203-rolling-bin.jpg
+image_source: /images/203-rolling-bin-source.jpg
 slug: 203-rolling-bin
 story_number: '203'
 title: Контейнер на колесах

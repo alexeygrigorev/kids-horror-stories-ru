@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/121-y
 date: '2024-07-26'
 duration: 02:42
 illustration: /images/121-yellow-button.jpg
+image_source: /images/121-yellow-button-source.jpg
 slug: 121-yellow-button
 story_number: '121'
 title: Желтая кнопка

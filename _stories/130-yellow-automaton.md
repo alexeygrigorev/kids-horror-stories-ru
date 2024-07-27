@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/130-y
 date: '2024-07-26'
 duration: 02:38
 illustration: /images/130-yellow-automaton.jpg
+image_source: /images/130-yellow-automaton-source.jpg
 slug: 130-yellow-automaton
 story_number: '130'
 title: Желтый автомат

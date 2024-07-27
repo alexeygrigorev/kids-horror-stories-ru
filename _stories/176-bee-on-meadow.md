@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/176-b
 date: '2024-07-26'
 duration: 02:33
 illustration: /images/176-bee-on-meadow.jpg
+image_source: /images/176-bee-on-meadow-source.jpg
 slug: 176-bee-on-meadow
 story_number: '176'
 title: Шмель на лугу

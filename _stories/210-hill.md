@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/210-h
 date: '2024-07-27'
 duration: 02:31
 illustration: /images/210-hill.jpg
+image_source: /images/210-hill-source.jpg
 slug: 210-hill
 story_number: '210'
 title: Горка

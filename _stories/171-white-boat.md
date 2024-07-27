@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/171-w
 date: '2024-07-26'
 duration: 02:31
 illustration: /images/171-white-boat.jpg
+image_source: /images/171-white-boat-source.jpg
 slug: 171-white-boat
 story_number: '171'
 title: Лодка белого капитана

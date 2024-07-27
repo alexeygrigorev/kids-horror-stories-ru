@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/118-l
 date: '2024-07-26'
 duration: 03:00
 illustration: /images/118-lonely-chair.jpg
+image_source: /images/118-lonely-chair-source.jpg
 slug: 118-lonely-chair
 story_number: '118'
 title: Стул на тротуаре

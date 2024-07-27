@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/180-s
 date: '2024-07-26'
 duration: 02:41
 illustration: /images/180-small-streets.jpg
+image_source: /images/180-small-streets-source.jpg
 slug: 180-small-streets
 story_number: '180'
 title: Маленькие улицы

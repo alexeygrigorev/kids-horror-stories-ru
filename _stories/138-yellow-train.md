@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/138-y
 date: '2024-07-26'
 duration: 02:09
 illustration: /images/138-yellow-train.jpg
+image_source: /images/138-yellow-train-source.jpg
 slug: 138-yellow-train
 story_number: '138'
 title: Желтый поезд

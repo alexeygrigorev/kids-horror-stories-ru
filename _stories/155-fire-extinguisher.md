@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/155-f
 date: '2024-07-26'
 duration: 02:45
 illustration: /images/155-fire-extinguisher.jpg
+image_source: /images/155-fire-extinguisher-source.jpg
 slug: 155-fire-extinguisher
 story_number: '155'
 title: Огнетушитель

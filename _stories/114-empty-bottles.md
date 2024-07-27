@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/114-e
 date: '2024-07-26'
 duration: 02:39
 illustration: /images/114-empty-bottles.jpg
+image_source: /images/114-empty-bottles-source.jpg
 slug: 114-empty-bottles
 story_number: '114'
 title: Пустые бутылки

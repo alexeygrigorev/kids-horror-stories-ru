@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/161-c
 date: '2024-07-26'
 duration: 02:19
 illustration: /images/161-candies-end.jpg
+image_source: /images/161-candies-end-source.jpg
 slug: 161-candies-end
 story_number: '161'
 title: Конфеты на другом конце

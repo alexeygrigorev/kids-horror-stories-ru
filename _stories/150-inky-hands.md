@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/150-i
 date: '2024-07-26'
 duration: 02:22
 illustration: /images/150-inky-hands.jpg
+image_source: /images/150-inky-hands-source.jpg
 slug: 150-inky-hands
 story_number: '150'
 title: Рука с чернильными пальцами

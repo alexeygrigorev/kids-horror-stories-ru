@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/225-f
 date: '2024-07-27'
 duration: 02:30
 illustration: /images/225-forgotten-hive.jpg
+image_source: /images/225-forgotten-hive-source.jpg
 slug: 225-forgotten-hive
 story_number: '225'
 title: Забытый Улей

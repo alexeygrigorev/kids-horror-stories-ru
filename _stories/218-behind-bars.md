@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/218-b
 date: '2024-07-27'
 duration: 02:37
 illustration: /images/218-behind-bars.jpg
+image_source: /images/218-behind-bars-source.jpg
 slug: 218-behind-bars
 story_number: '218'
 title: За решеткой

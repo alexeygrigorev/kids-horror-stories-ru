@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/125-l
 date: '2024-07-26'
 duration: 02:38
 illustration: /images/125-lost-sounds.jpg
+image_source: /images/125-lost-sounds-source.jpg
 slug: 125-lost-sounds
 story_number: '125'
 title: Потерянные звуки

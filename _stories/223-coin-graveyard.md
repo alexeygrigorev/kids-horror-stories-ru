@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/223-c
 date: '2024-07-27'
 duration: 02:50
 illustration: /images/223-coin-graveyard.jpg
+image_source: /images/223-coin-graveyard-source.jpg
 slug: 223-coin-graveyard
 story_number: '223'
 title: Кладбище монет

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/156-t
 date: '2024-07-26'
 duration: 02:43
 illustration: /images/156-table-window.jpg
+image_source: /images/156-table-window-source.jpg
 slug: 156-table-window
 story_number: '156'
 title: Стол у окна

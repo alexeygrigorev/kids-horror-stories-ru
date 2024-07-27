@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/109-c
 date: '2024-07-26'
 duration: 02:56
 illustration: /images/109-clock-tower.jpg
+image_source: /images/109-clock-tower-source.jpg
 slug: 109-clock-tower
 story_number: '109'
 title: Башня с часами

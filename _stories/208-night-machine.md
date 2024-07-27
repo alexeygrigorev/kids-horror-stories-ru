@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/208-n
 date: '2024-07-27'
 duration: 02:42
 illustration: /images/208-night-machine.jpg
+image_source: /images/208-night-machine-source.jpg
 slug: 208-night-machine
 story_number: '208'
 title: Ночной автомат

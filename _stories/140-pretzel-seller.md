@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/140-p
 date: '2024-07-26'
 duration: 02:32
 illustration: /images/140-pretzel-seller.jpg
+image_source: /images/140-pretzel-seller-source.jpg
 slug: 140-pretzel-seller
 story_number: '140'
 title: Продавец бубликов

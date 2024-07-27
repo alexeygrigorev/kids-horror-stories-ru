@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/185-c
 date: '2024-07-26'
 duration: 02:51
 illustration: /images/185-circle-on-the-pavement.jpg
+image_source: /images/185-circle-on-the-pavement-source.jpg
 slug: 185-circle-on-the-pavement
 story_number: '185'
 title: Круг на тротуаре

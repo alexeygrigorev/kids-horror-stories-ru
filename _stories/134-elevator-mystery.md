@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/134-e
 date: '2024-07-26'
 duration: 02:44
 illustration: /images/134-elevator-mystery.jpg
+image_source: /images/134-elevator-mystery-source.jpg
 slug: 134-elevator-mystery
 story_number: '134'
 title: Лифт в подземелье

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/126-l
 date: '2024-07-26'
 duration: 02:46
 illustration: /images/126-last-witness-bench.jpg
+image_source: /images/126-last-witness-bench-source.jpg
 slug: 126-last-witness-bench
 story_number: '126'
 title: Скамейка последнего свидетеля

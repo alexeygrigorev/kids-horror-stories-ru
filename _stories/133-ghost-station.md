@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/133-g
 date: '2024-07-26'
 duration: 02:47
 illustration: /images/133-ghost-station.jpg
+image_source: /images/133-ghost-station-source.jpg
 slug: 133-ghost-station
 story_number: '133'
 title: Станция призраков

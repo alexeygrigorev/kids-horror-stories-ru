@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/110-u
 date: '2024-07-26'
 duration: 02:22
 illustration: /images/110-unseen.jpg
+image_source: /images/110-unseen-source.jpg
 slug: 110-unseen
 story_number: '110'
 title: Незримое

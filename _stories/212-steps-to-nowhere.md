@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/212-s
 date: '2024-07-27'
 duration: 02:32
 illustration: /images/212-steps-to-nowhere.jpg
+image_source: /images/212-steps-to-nowhere-source.jpg
 slug: 212-steps-to-nowhere
 story_number: '212'
 title: Ступени в никуда

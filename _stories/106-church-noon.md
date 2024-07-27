@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/106-c
 date: '2024-07-26'
 duration: 03:11
 illustration: /images/106-church-noon.jpg
+image_source: /images/106-church-noon-source.jpg
 slug: 106-church-noon
 story_number: '106'
 title: Церковь в полдень

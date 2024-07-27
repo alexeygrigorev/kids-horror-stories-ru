@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/139-d
 date: '2024-07-26'
 duration: 02:49
 illustration: /images/139-darkbeads.jpg
+image_source: /images/139-darkbeads-source.jpg
 slug: 139-darkbeads
 story_number: '139'
 title: Бусы из мрака

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/163-s
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/163-salt-and-pepper.jpg
+image_source: /images/163-salt-and-pepper-source.jpg
 slug: 163-salt-and-pepper
 story_number: '163'
 title: Соль и перец

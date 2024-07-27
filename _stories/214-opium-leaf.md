@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/214-o
 date: '2024-07-27'
 duration: 02:42
 illustration: /images/214-opium-leaf.jpg
+image_source: /images/214-opium-leaf-source.jpg
 slug: 214-opium-leaf
 story_number: '214'
 title: Опиумный лист

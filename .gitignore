@@ -13,3 +13,5 @@ images_input/*.jpeg
 images_input/*.webp
 images_input/*.png
 images_input/done/
+
+.ipynb_checkpoints/

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/166-f
 date: '2024-07-26'
 duration: 02:29
 illustration: /images/166-forgotten-fountain.jpg
+image_source: /images/166-forgotten-fountain-source.jpg
 slug: 166-forgotten-fountain
 story_number: '166'
 title: Забытый фонтан

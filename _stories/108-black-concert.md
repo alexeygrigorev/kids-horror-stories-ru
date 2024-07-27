@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/108-b
 date: '2024-07-26'
 duration: 02:41
 illustration: /images/108-black-concert.jpg
+image_source: /images/108-black-concert-source.jpg
 slug: 108-black-concert
 story_number: '108'
 title: Концерт на Чёрной улице

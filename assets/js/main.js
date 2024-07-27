@@ -57,4 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
             body.style.fontSize = savedFontSize;
         }
     }
+
+    // Collapsible functionality
+    const collapsibleButtons = document.querySelectorAll('.collapsible');
+    collapsibleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            const content = button.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
 });

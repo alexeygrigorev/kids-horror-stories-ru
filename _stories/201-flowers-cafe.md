@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/201-f
 date: '2024-07-26'
 duration: 02:50
 illustration: /images/201-flowers-cafe.jpg
+image_source: /images/201-flowers-cafe-source.jpg
 slug: 201-flowers-cafe
 story_number: '201'
 title: Цветы кафе

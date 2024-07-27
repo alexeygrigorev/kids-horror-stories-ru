@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/211-e
 date: '2024-07-27'
 duration: 02:33
 illustration: /images/211-empty-bench.jpg
+image_source: /images/211-empty-bench-source.jpg
 slug: 211-empty-bench
 story_number: '211'
 title: Пустая скамейка

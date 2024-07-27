@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/111-l
 date: '2024-07-26'
 duration: 03:01
 illustration: /images/111-last-order.jpg
+image_source: /images/111-last-order-source.jpg
 slug: 111-last-order
 story_number: '111'
 title: Последний заказ

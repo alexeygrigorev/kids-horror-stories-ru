@@ -3,7 +3,6 @@ from pathlib import Path
 import frontmatter
 from tqdm import tqdm
 
-# Import the main function from generate_audio.py
 from generate_audio import main as generate_audio_main
 
 

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/190-e
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/190-empty-basket.jpg
+image_source: /images/190-empty-basket-source.jpg
 slug: 190-empty-basket
 story_number: '190'
 title: Пустая корзина

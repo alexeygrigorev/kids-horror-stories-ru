@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/191-p
 date: '2024-07-26'
 duration: 02:50
 illustration: /images/191-pink-candle.jpg
+image_source: /images/191-pink-candle-source.jpg
 slug: 191-pink-candle
 story_number: '191'
 title: Розовая свеча

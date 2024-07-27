@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/151-r
 date: '2024-07-26'
 duration: 02:22
 illustration: /images/151-red-clock.jpg
+image_source: /images/151-red-clock-source.jpg
 slug: 151-red-clock
 story_number: '151'
 title: Красные Часы

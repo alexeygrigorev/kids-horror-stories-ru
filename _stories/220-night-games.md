@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/220-n
 date: '2024-07-27'
 duration: 03:02
 illustration: /images/220-night-games.jpg
+image_source: /images/220-night-games-source.jpg
 slug: 220-night-games
 story_number: '220'
 title: Ночные игры

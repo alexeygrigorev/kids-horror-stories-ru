@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/224-e
 date: '2024-07-27'
 duration: 02:20
 illustration: /images/224-evil-toy.jpg
+image_source: /images/224-evil-toy-source.jpg
 slug: 224-evil-toy
 story_number: '224'
 title: Игрушка со зловещим сюрпризом

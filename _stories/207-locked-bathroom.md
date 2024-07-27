@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/207-l
 date: '2024-07-27'
 duration: 02:41
 illustration: /images/207-locked-bathroom.jpg
+image_source: /images/207-locked-bathroom-source.jpg
 slug: 207-locked-bathroom
 story_number: '207'
 title: Запертый туалет

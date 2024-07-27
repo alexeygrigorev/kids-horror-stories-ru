@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/127-t
 date: '2024-07-26'
 duration: 03:05
 illustration: /images/127-three-eyes.jpg
+image_source: /images/127-three-eyes-source.jpg
 slug: 127-three-eyes
 story_number: '127'
 title: Три глаза

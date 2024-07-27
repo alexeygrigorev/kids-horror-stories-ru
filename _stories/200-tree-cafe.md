@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/200-t
 date: '2024-07-26'
 duration: 02:28
 illustration: /images/200-tree-cafe.jpg
+image_source: /images/200-tree-cafe-source.jpg
 slug: 200-tree-cafe
 story_number: '200'
 title: Дерево у кафе

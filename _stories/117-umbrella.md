@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/117-u
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/117-umbrella.jpg
+image_source: /images/117-umbrella-source.jpg
 slug: 117-umbrella
 story_number: '117'
 title: Зонтик на балконе

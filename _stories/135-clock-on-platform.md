@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/135-c
 date: '2024-07-26'
 duration: 02:54
 illustration: /images/135-clock-on-platform.jpg
+image_source: /images/135-clock-on-platform-source.jpg
 slug: 135-clock-on-platform
 story_number: '135'
 title: Часы на платформе

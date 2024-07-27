@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/181-h
 date: '2024-07-26'
 duration: 02:45
 illustration: /images/181-horned-rod.jpg
+image_source: /images/181-horned-rod-source.jpg
 slug: 181-horned-rod
 story_number: '181'
 title: Рогатый стержень

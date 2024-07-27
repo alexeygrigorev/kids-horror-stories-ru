@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/192-s
 date: '2024-07-26'
 duration: 02:10
 illustration: /images/192-sculpture-dream.jpg
+image_source: /images/192-sculpture-dream-source.jpg
 slug: 192-sculpture-dream
 story_number: '192'
 title: Скульптура из сна

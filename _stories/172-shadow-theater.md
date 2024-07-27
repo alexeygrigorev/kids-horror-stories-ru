@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/172-s
 date: '2024-07-26'
 duration: 02:10
 illustration: /images/172-shadow-theater.jpg
+image_source: /images/172-shadow-theater-source.jpg
 slug: 172-shadow-theater
 story_number: '172'
 title: Театр теней

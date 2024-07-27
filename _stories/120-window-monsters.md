@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/120-w
 date: '2024-07-26'
 duration: 03:01
 illustration: /images/120-window-monsters.jpg
+image_source: /images/120-window-monsters-source.jpg
 slug: 120-window-monsters
 story_number: '120'
 title: Чудовища в витрине

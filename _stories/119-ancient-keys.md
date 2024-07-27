@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/119-a
 date: '2024-07-26'
 duration: 02:23
 illustration: /images/119-ancient-keys.jpg
+image_source: /images/119-ancient-keys-source.jpg
 slug: 119-ancient-keys
 story_number: '119'
 title: Древние ключи

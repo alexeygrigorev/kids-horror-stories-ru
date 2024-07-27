@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/160-l
 date: '2024-07-26'
 duration: 02:45
 illustration: /images/160-lunch-of-fear.jpg
+image_source: /images/160-lunch-of-fear-source.jpg
 slug: 160-lunch-of-fear
 story_number: '160'
 title: Обед со вкусом страха

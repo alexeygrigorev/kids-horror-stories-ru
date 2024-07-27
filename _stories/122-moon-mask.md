@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/122-m
 date: '2024-07-26'
 duration: 02:34
 illustration: /images/122-moon-mask.jpg
+image_source: /images/122-moon-mask-source.jpg
 slug: 122-moon-mask
 story_number: '122'
 title: Маска луны

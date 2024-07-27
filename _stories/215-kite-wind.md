@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/215-k
 date: '2024-07-27'
 duration: 02:35
 illustration: /images/215-kite-wind.jpg
+image_source: /images/215-kite-wind-source.jpg
 slug: 215-kite-wind
 story_number: '215'
 title: Ветряной змей

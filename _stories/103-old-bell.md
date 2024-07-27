@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/103-o
 date: '2024-07-26'
 duration: 02:37
 illustration: /images/103-old-bell.jpg
+image_source: /images/103-old-bell-source.jpg
 slug: 103-old-bell
 story_number: '103'
 title: Старый колокол

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/149-t
 date: '2024-07-26'
 duration: 02:10
 illustration: /images/149-tower.jpg
+image_source: /images/149-tower-source.jpg
 slug: 149-tower
 story_number: '149'
 title: Телебашня

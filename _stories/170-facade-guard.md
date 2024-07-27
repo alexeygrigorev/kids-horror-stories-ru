@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/170-f
 date: '2024-07-26'
 duration: 02:35
 illustration: /images/170-facade-guard.jpg
+image_source: /images/170-facade-guard-source.jpg
 slug: 170-facade-guard
 story_number: '170'
 title: Страж фасада

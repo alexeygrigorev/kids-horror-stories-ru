@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/187-b
 date: '2024-07-26'
 duration: 02:42
 illustration: /images/187-bear-call.jpg
+image_source: /images/187-bear-call-source.jpg
 slug: 187-bear-call
 story_number: '187'
 title: Медвежий зов

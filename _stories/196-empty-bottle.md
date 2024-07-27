@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/196-e
 date: '2024-07-26'
 duration: 02:24
 illustration: /images/196-empty-bottle.jpg
+image_source: /images/196-empty-bottle-source.jpg
 slug: 196-empty-bottle
 story_number: '196'
 title: Пустая бутылка

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/101-m
 date: '2024-07-26'
 duration: 02:14
 illustration: /images/101-museum-night.jpg
+image_source: /images/101-museum-night-source.jpg
 slug: 101-museum-night
 story_number: '101'
 title: Музей ночью

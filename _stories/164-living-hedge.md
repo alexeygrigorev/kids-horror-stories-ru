@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/164-l
 date: '2024-07-26'
 duration: 02:36
 illustration: /images/164-living-hedge.jpg
+image_source: /images/164-living-hedge-source.jpg
 slug: 164-living-hedge
 story_number: '164'
 title: Живая изгородь

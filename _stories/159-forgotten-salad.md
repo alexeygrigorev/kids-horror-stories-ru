@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/159-f
 date: '2024-07-26'
 duration: 03:29
 illustration: /images/159-forgotten-salad.jpg
+image_source: /images/159-forgotten-salad-source.jpg
 slug: 159-forgotten-salad
 story_number: '159'
 title: Салат из забвения

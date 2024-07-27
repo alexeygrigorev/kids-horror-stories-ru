@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/131-i
 date: '2024-07-26'
 duration: 02:40
 illustration: /images/131-iron-silence.jpg
+image_source: /images/131-iron-silence-source.jpg
 slug: 131-iron-silence
 story_number: '131'
 title: Железная тишина

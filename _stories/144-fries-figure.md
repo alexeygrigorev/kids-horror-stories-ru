@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/144-f
 date: '2024-07-26'
 duration: 02:30
 illustration: /images/144-fries-figure.jpg
+image_source: /images/144-fries-figure-source.jpg
 slug: 144-fries-figure
 story_number: '144'
 title: Фигура картошки фри

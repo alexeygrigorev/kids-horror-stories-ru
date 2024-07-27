@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/188-c
 date: '2024-07-26'
 duration: 02:22
 illustration: /images/188-customer-tale.jpg
+image_source: /images/188-customer-tale-source.jpg
 slug: 188-customer-tale
 story_number: '188'
 title: Рассказ покупателя

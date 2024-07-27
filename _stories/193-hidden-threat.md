@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/193-h
 date: '2024-07-26'
 duration: 02:29
 illustration: /images/193-hidden-threat.jpg
+image_source: /images/193-hidden-threat-source.jpg
 slug: 193-hidden-threat
 story_number: '193'
 title: Скрытая Угрозa

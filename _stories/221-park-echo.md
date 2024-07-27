@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/221-p
 date: '2024-07-27'
 duration: 02:32
 illustration: /images/221-park-echo.jpg
+image_source: /images/221-park-echo-source.jpg
 slug: 221-park-echo
 story_number: '221'
 title: Эхо автопарковки

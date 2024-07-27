@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/174-b
 date: '2024-07-26'
 duration: 02:40
 illustration: /images/174-black-feather.jpg
+image_source: /images/174-black-feather-source.jpg
 slug: 174-black-feather
 story_number: '174'
 title: Черное перо

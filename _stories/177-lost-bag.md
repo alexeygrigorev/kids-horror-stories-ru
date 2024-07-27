@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/177-l
 date: '2024-07-26'
 duration: 02:39
 illustration: /images/177-lost-bag.jpg
+image_source: /images/177-lost-bag-source.jpg
 slug: 177-lost-bag
 story_number: '177'
 title: Пропавший рюкзак

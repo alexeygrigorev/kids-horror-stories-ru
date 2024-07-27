@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/132-y
 date: '2024-07-26'
 duration: 02:27
 illustration: /images/132-yellow-ticket.jpg
+image_source: /images/132-yellow-ticket-source.jpg
 slug: 132-yellow-ticket
 story_number: '132'
 title: Желтый компостер

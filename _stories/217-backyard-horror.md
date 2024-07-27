@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/217-b
 date: '2024-07-27'
 duration: 02:14
 illustration: /images/217-backyard-horror.jpg
+image_source: /images/217-backyard-horror-source.jpg
 slug: 217-backyard-horror
 story_number: '217'
 title: Ужас на задворках

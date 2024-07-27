@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/102-s
 date: '2024-07-26'
 duration: 02:41
 illustration: /images/102-seventh-bell-tower.jpg
+image_source: /images/102-seventh-bell-tower-source.jpg
 slug: 102-seventh-bell-tower
 story_number: '102'
 title: Башня седьмого звонка

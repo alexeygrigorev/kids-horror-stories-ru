@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/199-d
 date: '2024-07-26'
 duration: 02:18
 illustration: /images/199-dark-soda.jpg
+image_source: /images/199-dark-soda-source.jpg
 slug: 199-dark-soda
 story_number: '199'
 title: Тёмная газировка

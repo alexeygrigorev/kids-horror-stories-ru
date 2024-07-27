@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/116-w
 date: '2024-07-26'
 duration: 02:49
 illustration: /images/116-wall-plant.jpg
+image_source: /images/116-wall-plant-source.jpg
 slug: 116-wall-plant
 story_number: '116'
 title: Растение у стены

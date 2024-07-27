@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/186-r
 date: '2024-07-26'
 duration: 02:56
 illustration: /images/186-rainbow-ball.jpg
+image_source: /images/186-rainbow-ball-source.jpg
 slug: 186-rainbow-ball
 story_number: '186'
 title: Шар с радугой

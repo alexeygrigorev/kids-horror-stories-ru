@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/183-y
 date: '2024-07-26'
 duration: 02:34
 illustration: /images/183-yellow-ghost.jpg
+image_source: /images/183-yellow-ghost-source.jpg
 slug: 183-yellow-ghost
 story_number: '183'
 title: Желтый призрак

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/194-d
 date: '2024-07-26'
 duration: 02:26
 illustration: /images/194-dog-figurine.jpg
+image_source: /images/194-dog-figurine-source.jpg
 slug: 194-dog-figurine
 story_number: '194'
 title: Статуэтка пса

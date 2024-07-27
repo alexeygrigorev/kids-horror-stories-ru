@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/113-d
 date: '2024-07-26'
 duration: 02:03
 illustration: /images/113-dandelion.jpg
+image_source: /images/113-dandelion-source.jpg
 slug: 113-dandelion
 story_number: '113'
 title: Одуванчик среди камней

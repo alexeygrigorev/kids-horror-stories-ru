@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/182-b
 date: '2024-07-26'
 duration: 03:09
 illustration: /images/182-bear-on-the-corner.jpg
+image_source: /images/182-bear-on-the-corner-source.jpg
 slug: 182-bear-on-the-corner
 story_number: '182'
 title: Медведь на углу

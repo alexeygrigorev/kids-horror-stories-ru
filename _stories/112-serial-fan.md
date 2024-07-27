@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/112-s
 date: '2024-07-26'
 duration: 03:03
 illustration: /images/112-serial-fan.jpg
+image_source: /images/112-serial-fan-source.jpg
 slug: 112-serial-fan
 story_number: '112'
 title: Серийный вентилятор

@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/209-l
 date: '2024-07-27'
 duration: 02:46
 illustration: /images/209-lost-cart.jpg
+image_source: /images/209-lost-cart-source.jpg
 slug: 209-lost-cart
 story_number: '209'
 title: Потерянная тележка

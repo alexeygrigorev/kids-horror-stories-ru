@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/189-d
 date: '2024-07-26'
 duration: 02:56
 illustration: /images/189-doll-guardians.jpg
+image_source: /images/189-doll-guardians-source.jpg
 slug: 189-doll-guardians
 story_number: '189'
 title: Кукольные хранители

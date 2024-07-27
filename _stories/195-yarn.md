@@ -4,6 +4,7 @@ audio_url: https://kids-horror-stories-ru.s3.eu-west-1.amazonaws.com/audio/195-y
 date: '2024-07-26'
 duration: 02:52
 illustration: /images/195-yarn.jpg
+image_source: /images/195-yarn-source.jpg
 slug: 195-yarn
 story_number: '195'
 title: Клубок
