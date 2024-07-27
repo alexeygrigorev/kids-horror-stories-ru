@@ -1,8 +1,8 @@
 name: Process Stories
 
 on:
-  # schedule:
-  #   - cron: '*/15 * * * *'  # Runs every 15 minutes
+  schedule:
+    - cron: '*/15 * * * *'  # Runs every 15 minutes
   workflow_dispatch:  # Allows manual triggering
 
 permissions:
@@ -36,8 +36,9 @@ jobs:
 
     - name: Commit changes
       run: |
+        EPISODE_NAME=$(ls -t _stories/*.md | head -1)
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Add new stories and images" || echo "No changes to commit"
+        git commit -m "$EPISODE_NAME" || echo "No changes to commit"
         git push
