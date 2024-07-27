@@ -1,1 +1,4 @@
 export OPENAI_API_KEY='sk-proj-key'
+export AWS_ACCESS_KEY_ID='key'
+export AWS_SECRET_ACCESS_KEY='access'
+export AWS_DEFAULT_REGION='eu-west-1'
