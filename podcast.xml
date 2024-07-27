@@ -30,10 +30,10 @@ layout: null
         <itunes:subtitle>{{ post.title }}</itunes:subtitle>
         <itunes:summary><![CDATA[{{ post.content | strip_html | truncatewords: 50 }}]]></itunes:summary>
         <description><![CDATA[
-          {{ post.content | strip_html }}
           {% if post.image_source %}
           <a href="{{ post.image_source | absolute_url }}">Оригинальное изображение</a>
           {% endif %}
+          {{ post.content | strip_html }}
         ]]></description>
         {% if post.illustration %}
         <itunes:image href="{{ post.illustration | absolute_url }}"/>
