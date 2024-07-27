@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files to S3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .container input, .container button {
+            width: calc(100% - 22px);
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="uploadForm">
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            <input type="file" id="fileInput" name="file" multiple>
+            <button type="button" onclick="uploadFiles()">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const storedPassword = localStorage.getItem('uploadPassword');
+            if (storedPassword) {
+                document.getElementById('passwordInput').value = storedPassword;
+            }
+        });
+
+        async function uploadFiles() {
+            const passwordInput = document.getElementById('passwordInput');
+            const password = passwordInput.value;
+            const fileInput = document.getElementById('fileInput');
+            const files = fileInput.files;
+
+            if (!password) {
+                alert('Please enter the password.');
+                return;
+            }
+
+            if (files.length === 0) {
+                alert('Please select files to upload.');
+                return;
+            }
+
+            localStorage.setItem('uploadPassword', password);
+
+            const fileData = [];
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    fileData.push({
+                        file_name: file.name,
+                        content_type: file.type,
+                        file_content: event.target.result.split(',')[1]
+                    });
+
+                    if (fileData.length === files.length) {
+                        sendFiles(password, fileData);
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        async function sendFiles(password, fileData) {
+            const response = await fetch(window.location.href, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'password': password,
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({ files: fileData })
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert('Files uploaded successfully');
+                location.reload();
+            } else {
+                alert('Error uploading files: ' + result.message);
+            }
+        }
+    </script>
+</body>
+</html>
