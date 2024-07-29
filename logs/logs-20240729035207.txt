@@ -1,0 +1,1 @@
+input/PXL_20240727_122115601.jpg: Failed to process: not enough values to unpack (expected 3, got 2)
