@@ -1,0 +1,1 @@
+input/PXL_20240804_123519703.MP.jpg: Failed to process: Error code: 500 - {'error': {'message': 'Timed out generating response. Please try again with a shorter prompt or with `max_tokens` set to a lower value.', 'type': 'internal_error', 'param': None, 'code': 'request_timeout'}}
