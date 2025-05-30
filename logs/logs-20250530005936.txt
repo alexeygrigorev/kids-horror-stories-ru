@@ -1,0 +1,1 @@
+input/PXL_20240807_131430460.jpg: Failed to process: Error code: 400 - {'error': {'message': 'You uploaded an unsupported image. Please make sure your image is valid.', 'type': 'invalid_request_error', 'param': None, 'code': 'image_parse_error'}}
