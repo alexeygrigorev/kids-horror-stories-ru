@@ -19,12 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.12'
+        python-version: '3.13'
 
     - name: Install dependencies
       run: |
-        pip install pipenv
-        pipenv install
+        pip install uv
+        uv sync
 
     - name: Run process_stories.py
       env:
@@ -34,7 +34,7 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         S3_BUCKET_IMAGES: 'kids-horror-stories-ru-images'
       run: |
-        pipenv run python process_stories.py
+        uv run python process_stories.py
 
     - name: Commit changes
       run: |
