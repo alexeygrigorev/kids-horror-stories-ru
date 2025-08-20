@@ -1,15 +1,20 @@
 import os
 import base64
-import requests
-from pathlib import Path
-from openai import OpenAI
-import frontmatter
-from generate_audio import main as generate_audio
 import datetime
-import boto3
-from botocore.exceptions import NoCredentialsError, ClientError
-from PIL import Image
+
 from io import BytesIO
+from pathlib import Path
+
+import boto3
+import requests
+import frontmatter
+
+from PIL import Image
+from openai import OpenAI
+from pydantic import BaseModel
+
+from generate_audio import main as generate_audio
+
 
 client = OpenAI()
 
@@ -20,15 +25,20 @@ output_image_size = 512
 output_image_quality = 80
 
 
+
 def download_image_to_base64(file_path):
     with open(file_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 
-def download_image_from_s3_to_base64(bucket_name, object_key):
+
+def download_image_from_s3_to_base64(bucket_name, object_key, resize=False):
     s3 = boto3.client("s3")
     response = s3.get_object(Bucket=bucket_name, Key=object_key)
-    return base64.b64encode(response["Body"].read()).decode("utf-8")
+
+    body = response["Body"].read()
+
+    return base64.b64encode(body).decode("utf-8")
 
 
 def resize_image(image_data, size=(512, 512)):
@@ -45,55 +55,52 @@ def resize_and_save_original_image(input_path, output_path, size=output_image_si
         img.save(output_path, "JPEG", quality=output_image_quality)
 
 
-def create_story(base64_image):
-    story_prompt = """
-    Я хочу, чтоб ты рассказал страшилку. Я тебе присылаю фотографию, ты описываешь фотографию, а потом
-    на основе этой картинки придумываешь страшилку. Страшную, что-нибудь из городского фольклора,
-    городских историй ужасов. Конец не обязательно должен быть хорошим. И дай истории название.
+class StoryResponse(BaseModel):
+    slug: str
+    title: str
+    story: str
 
-    У истории должно быть 8-12 абзацев.
 
-    Для названий не используй слова как "проклятый", "проклятье", "мрачный", "заброшенный", "тайна", "тень", "ужас", "шёпот".
-    Не используй никакое форматирование для названия и для текста.
-    Для slug используй короткое называние на английском, такое, которое можно использовать в URL.
+STORY_PROMPT = """
+Я хочу, чтоб ты рассказал страшилку. Я тебе присылаю фотографию, ты описываешь фотографию, а потом
+на основе этой картинки придумываешь страшилку. Страшную, что-нибудь из городского фольклора,
+городских историй ужасов. Конец не обязательно должен быть хорошим. И дай истории название.
 
-    Следование формату обязательно.
+У истории должно быть 8-12 абзацев.
 
-    Формат:
+Для названий не используй слова как "проклятый", "проклятье", "мрачный", "заброшенный", "тайна", "тень", "ужас", "шёпот".
+Избегай сюжетов, в которых персонажи слышат шорох или шепот, а так же сюжетов,
+в которых предметы возвращаются обратно к главным героям.
 
-    Название
+Не используй никакое форматирование для названия и для текста.
+Название истории должно быть на русском.
+Для slug используй короткое называние на английском, такое, которое можно использовать в URL.
+""".strip()
 
-    --- 
 
-    slug
+def create_story(base64_image) -> StoryResponse:
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "input_text", "text": STORY_PROMPT},
+                {
+                    "type": "input_image",
+                    "image_url": f"data:image/jpeg;base64,{base64_image}",
+                    "detail": "low"
+                }
+            ],
+        }
+    ]
 
-    ---
-
-    История
-    """
-
-    story_response = client.chat.completions.create(
+    story_response = client.responses.parse(
         model="gpt-4o",
-        messages=[
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": story_prompt},
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{base64_image}",
-                            "detail": "low",
-                        },
-                    },
-                ],
-            }
-        ],
+        input=messages,
+        text_format=StoryResponse
     )
 
-    story_raw = story_response.choices[0].message.content
-    title, slug, story = story_raw.split("---")
-    return title.strip(), slug.strip(), story.strip()
+    story = story_response.output[0].content[0].parsed
+    return story
 
 
 def create_illustration_prompt(story):
@@ -137,26 +144,28 @@ def create_illustration_prompt(story):
     return illustration_prompt.choices[0].message.content
 
 
+EDIT_STORY_PROMPT = """
+Ты опытный редактор историй ужасов, в совершенстве владеющий русским.
+Исправь эту историю. Сделай так, чтобы вся грамматика была понятна и корректна.
+И чтобы не было странных выражений. Если пропадутся выражения,
+которые в русском обычно не употребляются, или непонятные выражения,
+замени их на более понятные или более употребмые, и более подходящие
+в контексте истории.
+Начинай сразу с истории, не включай в ответ ничего кроме этого.
+""" 
+
 def edit_story(story):
-    prompt = f"""
-    Ты опытный редактор историй ужасов, в совершенстве владеющий русским.
-    Исправь эту историю. Сделай так, чтобы вся грамматика была понятна и корректна.
-    И чтобы не было странных выражений. Если пропадутся выражения,
-    которые в русском обычно не употребляются, или непонятные выражения,
-    замени их на более понятные или более употребмые, и более подходящие
-    в контексте истории.
-    Начинай сразу с истории, не включай в ответ ничего кроме этого.
-    
-    История:
+    messages = [
+        {"role": "system", "content": EDIT_STORY_PROMPT},
+        {"role": "user", "text": story}
+    ]
 
-    {story}
-    """.strip()
-
-    result = client.chat.completions.create(
-        model="gpt-4o", messages=[{"role": "user", "content": prompt}]
+    result = client.responses.create(
+        model="gpt-5o", input=messages
     )
 
-    return result.choices[0].message.content
+    return result.output[0].content[0].text
+
 
 def generate_illustration(prompt):
     illustration_response = client.images.generate(
@@ -185,12 +194,12 @@ def get_next_story_id(output_dir):
 
 
 def save_story(
-    title, slug, story, illustration_url, output_dir, story_id, original_image_path
+    story: StoryResponse, illustration_url, output_dir, story_id, original_image_path
 ):
-    formatted_slug = f"{str(story_id).zfill(3)}-{slug}"
+    formatted_slug = f"{str(story_id).zfill(3)}-{story.slug}"
     story_file = Path(output_dir) / f"{formatted_slug}.md"
     post = frontmatter.Post(story)
-    post["title"] = title
+    post["title"] = story.title
     post["slug"] = formatted_slug
     post["illustration"] = f"/images/{formatted_slug}.jpg"
     post["story_number"] = str(story_id).zfill(3)
@@ -215,19 +224,22 @@ def save_story(
 
     with open(illustration_path, "wb") as f:
         f.write(resized_image.getvalue())
+
     print(f"Saved resized illustration: {illustration_path}")
 
 
 def process_image(image_path, output_dir):
     print(f"Processing image: {image_path}")
     base64_image = download_image_to_base64(image_path)
-    title, slug, story = create_story(base64_image)
-    story = edit_story(story)
+
+    story = create_story(base64_image)
+    story.story = edit_story(story.story)
+
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
-    save_story(title, slug, story, illustration_url, output_dir, story_id, image_path)
-    generate_audio(f"{str(story_id).zfill(3)}-{slug}")
+    save_story(story, illustration_url, output_dir, story_id, image_path)
+    generate_audio(f"{str(story_id).zfill(3)}-{story.slug}")
     return Path(image_path)
 
 
@@ -245,15 +257,18 @@ def process_image_from_s3(bucket_name, object_key, output_dir):
         f.write(image_data)
 
     base64_image = base64.b64encode(image_data).decode("utf-8")
-    title, slug, story = create_story(base64_image)
-    story = edit_story(story)
+    
+    story = create_story(base64_image)
+    story.story = edit_story(story.story)
     illustration_prompt = create_illustration_prompt(story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
+
     save_story(
-        title, slug, story, illustration_url, output_dir, story_id, temp_image_path
+        story, illustration_url, output_dir, story_id, temp_image_path
     )
-    generate_audio(f"{str(story_id).zfill(3)}-{slug}")
+    
+    generate_audio(f"{str(story_id).zfill(3)}-{story.slug}")
 
     # Remove the temporary image
     temp_image_path.unlink()
