@@ -96,11 +96,19 @@ def create_story(base64_image) -> StoryResponse:
     story_response = client.responses.parse(
         model="gpt-4o",
         input=messages,
-        text_format=StoryResponse
+        text_format=StoryResponse,
+        # reasoning={
+        #     "effort": "medium"
+        # }
     )
 
-    story = story_response.output[0].content[0].parsed
-    return story
+    output = story_response.output
+
+    for entry in output:
+        if entry.type == "message":
+            return entry.content[0].parsed
+
+    raise ValueError("No story found")
 
 
 def create_illustration_prompt(story):
@@ -157,14 +165,18 @@ EDIT_STORY_PROMPT = """
 def edit_story(story):
     messages = [
         {"role": "system", "content": EDIT_STORY_PROMPT},
-        {"role": "user", "text": story}
+        {"role": "user", "content": story}
     ]
 
     result = client.responses.create(
-        model="gpt-5o", input=messages
+        model="gpt-5",
+        input=messages,
+        reasoning={
+            "effort": "low"
+        }
     )
 
-    return result.output[0].content[0].text
+    return result.output_text
 
 
 def generate_illustration(prompt):
@@ -235,7 +247,7 @@ def process_image(image_path, output_dir):
     story = create_story(base64_image)
     story.story = edit_story(story.story)
 
-    illustration_prompt = create_illustration_prompt(story)
+    illustration_prompt = create_illustration_prompt(story.story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
     save_story(story, illustration_url, output_dir, story_id, image_path)
@@ -260,7 +272,7 @@ def process_image_from_s3(bucket_name, object_key, output_dir):
     
     story = create_story(base64_image)
     story.story = edit_story(story.story)
-    illustration_prompt = create_illustration_prompt(story)
+    illustration_prompt = create_illustration_prompt(story.story)
     illustration_url = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
 
