@@ -210,7 +210,7 @@ def save_story(
 ):
     formatted_slug = f"{str(story_id).zfill(3)}-{story.slug}"
     story_file = Path(output_dir) / f"{formatted_slug}.md"
-    post = frontmatter.Post(story)
+    post = frontmatter.Post(story.story)
     post["title"] = story.title
     post["slug"] = formatted_slug
     post["illustration"] = f"/images/{formatted_slug}.jpg"
