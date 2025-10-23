@@ -1,0 +1,1 @@
+input/PXL_20250705_180911731.jpg: Failed to process: 'ResponseOutputRefusal' object has no attribute 'parsed'
