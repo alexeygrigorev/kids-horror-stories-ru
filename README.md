@@ -1,5 +1,7 @@
 # kids-horror-stories-ru
 
+How it works: https://alexeyondata.substack.com/p/how-i-built-a-fully-automated-image
+
 Страшилки для детей на русском
 
 https://alexeygrigorev.com/kids-horror-stories-ru/
