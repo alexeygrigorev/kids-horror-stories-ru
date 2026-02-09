@@ -1,0 +1,1 @@
+input/PXL_20250726_163001692.jpg: Failed to process: Error code: 400 - {'error': {'message': 'Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.', 'type': 'image_generation_user_error', 'param': None, 'code': 'content_policy_violation'}}
