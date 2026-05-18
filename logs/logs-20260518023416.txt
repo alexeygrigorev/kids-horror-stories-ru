@@ -1,0 +1,1 @@
+input/PXL_20250824_150830307.MP.jpg: Failed to process: Error code: 400 - {'error': {'message': "The model 'dall-e-3' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}
