@@ -183,7 +183,7 @@ def generate_illustration(prompt):
         model="gpt-image-1",
         prompt=prompt,
         size="1024x1024",
-        quality="low",
+        quality="medium",
         n=1,
     )
     return base64.b64decode(illustration_response.data[0].b64_json)
