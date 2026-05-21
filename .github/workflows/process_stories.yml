@@ -1,11 +1,11 @@
 name: Process Stories
 
 on:
-  schedule:
-    # - cron: '*/15 * * * *'  # Runs every 15 minutes
-    # - cron: '0 * * * *'  # Runs every hour
-    - cron: '0 0 * * *' # Runs every day
-  workflow_dispatch:  # Allows manual triggering
+  # schedule:
+  #   - cron: '*/15 * * * *'  # Runs every 15 minutes
+  #   - cron: '0 * * * *'  # Runs every hour
+  #   - cron: '0 0 * * *' # Runs every day
+  workflow_dispatch:  # Manual trigger only — re-enable schedule above when ready
 
 permissions:
   contents: write
