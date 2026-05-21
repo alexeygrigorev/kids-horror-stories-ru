@@ -6,7 +6,6 @@ from io import BytesIO
 from pathlib import Path
 
 import boto3
-import requests
 import frontmatter
 
 from PIL import Image
@@ -181,13 +180,13 @@ def edit_story(story):
 
 def generate_illustration(prompt):
     illustration_response = client.images.generate(
-        model="dall-e-3",
+        model="gpt-image-1",
         prompt=prompt,
         size="1024x1024",
-        quality="standard",
+        quality="low",
         n=1,
     )
-    return illustration_response.data[0].url
+    return base64.b64decode(illustration_response.data[0].b64_json)
 
 
 def get_next_story_id(output_dir):
@@ -206,7 +205,7 @@ def get_next_story_id(output_dir):
 
 
 def save_story(
-    story: StoryResponse, illustration_url, output_dir, story_id, original_image_path
+    story: StoryResponse, illustration_bytes, output_dir, story_id, original_image_path
 ):
     formatted_slug = f"{str(story_id).zfill(3)}-{story.slug}"
     story_file = Path(output_dir) / f"{formatted_slug}.md"
@@ -230,9 +229,7 @@ def save_story(
     # Save illustration to the images folder
     illustration_path = image_folder / f"{formatted_slug}.jpg"
 
-    # Fetch and resize the illustration
-    response = requests.get(illustration_url)
-    resized_image = resize_image(response.content)
+    resized_image = resize_image(illustration_bytes)
 
     with open(illustration_path, "wb") as f:
         f.write(resized_image.getvalue())
@@ -248,9 +245,9 @@ def process_image(image_path, output_dir):
     story.story = edit_story(story.story)
 
     illustration_prompt = create_illustration_prompt(story.story)
-    illustration_url = generate_illustration(illustration_prompt)
+    illustration_bytes = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
-    save_story(story, illustration_url, output_dir, story_id, image_path)
+    save_story(story, illustration_bytes, output_dir, story_id, image_path)
     generate_audio(f"{str(story_id).zfill(3)}-{story.slug}")
     return Path(image_path)
 
@@ -273,11 +270,11 @@ def process_image_from_s3(bucket_name, object_key, output_dir):
     story = create_story(base64_image)
     story.story = edit_story(story.story)
     illustration_prompt = create_illustration_prompt(story.story)
-    illustration_url = generate_illustration(illustration_prompt)
+    illustration_bytes = generate_illustration(illustration_prompt)
     story_id = get_next_story_id(output_dir)
 
     save_story(
-        story, illustration_url, output_dir, story_id, temp_image_path
+        story, illustration_bytes, output_dir, story_id, temp_image_path
     )
     
     generate_audio(f"{str(story_id).zfill(3)}-{story.slug}")
